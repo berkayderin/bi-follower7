@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Modals | Follower7</title>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="login-background">
+			<img src="./assets/img/bg_login.png" alt="Background Image" class="bg-image" />
+		</div>
+		<!--############ header -->
+		<header class="header">
+			<div class="header-logo">
+				<a href="index.html">
+					<img src="./assets/img/logo.svg" alt="Follower7" />
+				</a>
+			</div>
+			<div class="header-toggle" id="header-toggle">
+				<i class="ri-menu-line"></i>
+			</div>
+			<div class="overlay" id="overlay"></div>
+			<nav class="header-nav" id="header-nav">
+				<ul>
+					<li class="dropdown">
+						<a href="#">SOSYAL MEDYA HİZMETLERİ <i class="ri-arrow-down-s-line"></i></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">INSTAGRAM</a></li>
+							<li><a href="#">TIKTOK</a></li>
+							<li><a href="#">FACEBOOK</a></li>
+							<li><a href="#">TWITTER</a></li>
+							<li><a href="#">YOUTUBE</a></li>
+							<li><a href="#">THREADS</a></li>
+							<li><a href="#">TWİTCH</a></li>
+							<li><a href="#">GOOGLE</a></li>
+							<li><a href="#">DİSCORD</a></li>
+							<li><a href="#">LİNKEDİN</a></li>
+							<li><a href="#">TELEGRAM</a></li>
+							<li><a href="#">SPOTİFY</a></li>
+							<li><a href="#">SNAPCHAT</a></li>
+							<li><a href="#">KİCK</a></li>
+						</ul>
+					</li>
+					<li><a href="hakkimizda.html">BİZE ULAŞIN</a></li>
+					<li><a href="iletisim.html">BLOG</a></li>
+					<li>
+						<button class="btn-orange">
+							<a href="#">GİRİŞ YAP <i class="ri-arrow-right-s-line"></i></a>
+						</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!--############ login main -->
+		<div class="login-main">
+			<p>Aşağıda kullanabileceğin modaller bulunmaktadır.</p>
+			<!--############ modals -->
+			<div class="modals">
+				<button class="btn-orange" id="modal-1-btn">Şifremi Unuttum Hata</button>
+				<button class="btn-orange" id="modal-2-btn">Şifremi Unuttum Başarılı</button>
+				<button class="btn-orange" id="modal-3-btn">Şifremi Unuttum Başarılı - 1</button>
+			</div>
+		</div>
+
+		<!-- Modals -->
+		<div id="modal-1" class="modal">
+			<div class="modal-content">
+				<span class="close" data-modal="modal-1"></span>
+				<img src="./assets/img/icons/ico_error.png" alt="Error" />
+				<div class="modal-content-text">
+					<p>Bu e-posta adresine kayıtlı kullanıcı bulunamadı.</p>
+					<p>Lütfen Tekrar Deneyiniz.</p>
+				</div>
+				<a href="#" class="btn-green-register">TAMAM<i class="ri-arrow-right-s-line"></i> </a>
+			</div>
+		</div>
+
+		<div id="modal-2" class="modal">
+			<div class="modal-content">
+				<span class="close" data-modal="modal-2"></span>
+				<img src="./assets/img/icons/ico_mailsuccess.png" alt="Mail" />
+				<div class="modal-content-text">
+					<p>Aktivasyon kodunuzu mailinize ilettik.</p>
+					<p>Lütfen posta kutunuzu kontrol ediniz.</p>
+				</div>
+				<a href="#" class="btn-green-register">TAMAM<i class="ri-arrow-right-s-line"></i> </a>
+			</div>
+		</div>
+
+		<div id="modal-3" class="modal">
+			<div class="modal-content">
+				<span class="close" data-modal="modal-3"></span>
+				<img src="./assets/img/icons/ico_discount.png" alt="Discount" />
+				<div class="modal-content-text">
+					<p>Hemen üye olun</p>
+					<p>%10 İndirim Kazanın!</p>
+				</div>
+				<a href="#" class="btn-green-register">Hemen Üye Ol<i class="ri-arrow-right-s-line"></i> </a>
+				<a href="#" data-modal="modal-3">Kapat</a>
+			</div>
+		</div>
+
+		<!--############ footer -->
+		<footer>
+			<!-- footer-left -->
+			<div class="footer-left">
+				<div class="footer-left-top">
+					<img src="./assets/img/logo.svg" alt="Follower7" />
+					<div>
+						<button class="btn-black">
+							<a href="#">
+								<i class="ri-home-smile-2-line"></i>
+								HAKKIMIZDA
+							</a>
+						</button>
+						<button class="btn-black">
+							<a href="#">
+								<i class="ri-history-line"></i>
+								SİPARİŞ DURUMU
+							</a>
+						</button>
+						<button class="btn-black">
+							<a href="#">
+								<i class="ri-customer-service-2-line"></i>
+								TEMAS ETMEK
+							</a>
+						</button>
+					</div>
+				</div>
+				<div class="footer-left-bottom">
+					<div>
+						<h5>
+							<span class="footer-line"></span>
+							hizmetlerimiz
+						</h5>
+						<div class="footer-left-bottom-links">
+							<ul>
+								<li><a href="#">Instagram hizmeti</a></li>
+								<li><a href="#">Facebook hizmeti</a></li>
+								<li><a href="#">YouTube hizmeti</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">Tiktok hizmeti</a></li>
+								<li><a href="#">Twitter hizmeti</a></li>
+								<li><a href="#">Konu hizmeti</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<h5><span class="footer-line"></span>Takipçi satın al</h5>
+						<div>
+							<ul class="footer-left-bottom-links-2">
+								<li><a href="#">Instagram</a></li>
+								<li><a href="#">Tiktok takipçileri</a></li>
+							</ul>
+							<ul class="footer-left-bottom-links-2">
+								<li><a href="#">takipçileri satın al</a></li>
+							</ul>
+						</div>
+					</div>
+					<div>
+						<h5><span class="footer-line"></span>İzlemek</h5>
+						<div class="footer-left-bottom-links">
+							<ul>
+								<li><a href="#">GDPR</a></li>
+								<li><a href="#">Kurabiye</a></li>
+							</ul>
+							<ul>
+								<li><a href="#">İade politikası</a></li>
+								<li><a href="#">Temas etmek</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- footer-right -->
+			<div class="footer-right">
+				<div class="footer-right-top">
+					<p>Bizi sosyal medyada takip edin.</p>
+					<div class="footer-right-top-social">
+						<a href="https://www.facebook.com" class="btn-social" target="_blank">
+							<i class="ri-facebook-box-fill"></i>
+						</a>
+						<a href="https://www.linkedin.com" class="btn-social" target="_blank">
+							<i class="ri-linkedin-fill"></i>
+						</a>
+						<a href="https://www.instagram.com" class="btn-social" target="_blank">
+							<i class="ri-instagram-line"></i>
+						</a>
+						<a href="https://www.twitter.com" class="btn-social" target="_blank">
+							<i class="ri-twitter-fill"></i>
+						</a>
+					</div>
+				</div>
+				<div class="footer-right-bottom">
+					<div class="footer-right-bottom-title">
+						<a href="#" class="btn-social" target="_blank">
+							<i class="ri-customer-service-2-fill"></i>
+						</a>
+						<p>+49 0 405611 7470</p>
+					</div>
+					<div class="footer-right-bottom-title">
+						<a href="#" class="btn-social" target="_blank">
+							<i class="ri-mail-open-line"></i>
+						</a>
+						<p>info@follower7.de</p>
+					</div>
+					<div class="footer-right-bottom-title">
+						<a href="#" class="btn-social" target="_blank">
+							<i class="ri-map-pin-2-line"></i>
+						</a>
+						<div class="footer-right-bottom-title-text">
+							<p>16 Bahnhofstrasse. 13159</p>
+							<p>Pankow/Berlin</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+
+		<!--############ footer-bottom -->
+		<div class="footer-bottom">
+			<p>© 2024 Follower7. Tüm hakları saklıdır.</p>
+			<div class="footer-bottom-links">
+				<a href="#">Gizlilik Politikası</a>
+				<a href="#">İade politikası</a>
+				<a href="#">Temas etmek</a>
+			</div>
+		</div>
+
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
