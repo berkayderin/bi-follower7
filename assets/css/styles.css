@@ -2,28 +2,30 @@
 	font-family: 'Gilroy';
 	src: url('../fonts/Gilroy-Light.ttf') format('truetype');
 	font-weight: 300;
-	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Gilroy';
-	src: url('../fonts/Gilroy-M.ttf') format('truetype');
+	src: url('../fonts/Gilroy-Regular.ttf') format('truetype');
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('../fonts/Gilroy-Medium.ttf') format('truetype');
 	font-weight: 500;
-	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Gilroy';
 	src: url('../fonts/Gilroy-SemiBold.ttf') format('truetype');
 	font-weight: 600;
-	font-style: normal;
 }
 
 @font-face {
 	font-family: 'Gilroy';
 	src: url('../fonts/Gilroy-Bold.ttf') format('truetype');
 	font-weight: 700;
-	font-style: normal;
 }
 
 * {
@@ -105,8 +107,9 @@ header {
 	border-radius: 5px;
 	background-color: #f78129;
 	color: #fff;
-	font-weight: 500;
+	font-weight: 600;
 	cursor: pointer;
+	font-size: 12px;
 
 	display: flex;
 	justify-content: center;
@@ -120,6 +123,11 @@ header {
 .btn-orange:hover {
 	background-color: #af540d;
 	transition: 0.3s ease-in-out all;
+}
+
+.header-menu {
+	font-size: 18px;
+	font-weight: 600;
 }
 
 /* ############ header nav */
@@ -185,7 +193,8 @@ header {
 }
 
 .dropdown a {
-	font-size: 600;
+	font-size: 18px;
+	font-weight: 600;
 }
 
 /* ############ header mobile */
@@ -355,7 +364,7 @@ header {
 .login-card-header-title p {
 	color: #f78129;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .login-card-header-icon {
@@ -371,8 +380,7 @@ header {
 
 .login-card-header-icon i {
 	color: #f78129;
-	width: 16px;
-	height: 16px;
+	font-size: 1.2rem;
 }
 
 .btn-green-register {
@@ -395,7 +403,7 @@ header {
 }
 
 .btn-green-register:hover {
-	background-color: #2e9e73;
+	background-color: #f78129;
 	transition: 0.3s ease-in-out all;
 }
 
@@ -437,7 +445,7 @@ header {
 	background-color: #edf0f5;
 	padding: 0 60px;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 300;
 }
 
 .eye-icon {
@@ -479,7 +487,7 @@ header {
 }
 
 .btn-green-login:hover {
-	background-color: #2e9e73;
+	background-color: #f78129;
 	transition: 0.3s ease-in-out all;
 }
 
@@ -487,6 +495,7 @@ header {
 	color: #212529;
 	font-size: 18px;
 	font-weight: 500;
+	opacity: 0.5;
 }
 
 /* ############ login form card mobile */
@@ -612,7 +621,7 @@ header {
 .login-main-card p {
 	font-size: 20px;
 	color: #fff;
-	font-weight: 500;
+	font-weight: 400;
 	text-align: center;
 }
 
@@ -714,10 +723,11 @@ footer {
 	justify-content: center;
 	align-items: center;
 
-	background-color: #fff;
+	background-color: #edf0f5;
 }
 
 /* ############ footer left */
+
 .footer-left {
 	background-color: white;
 }
@@ -807,7 +817,7 @@ footer {
 
 /* ############ footer right */
 .footer-right {
-	background-color: #e9f3f7;
+	background-color: #edf0f5;
 	padding-left: 20px;
 	padding-top: 20px;
 	padding-bottom: 20px;
