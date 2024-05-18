@@ -723,12 +723,14 @@ footer {
 	justify-content: center;
 	align-items: center;
 
-	background-color: #edf0f5;
+	background-color: white;
 }
 
 /* ############ footer left */
 
 .footer-left {
+	padding-left: 250px;
+	flex: 2;
 	background-color: white;
 }
 
@@ -816,6 +818,10 @@ footer {
 }
 
 /* ############ footer right */
+.footerRight {
+	flex: 1;
+	background-color: #edf0f5;
+}
 .footer-right {
 	background-color: #edf0f5;
 	padding-left: 20px;
