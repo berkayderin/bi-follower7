@@ -503,13 +503,12 @@ header {
 	.login-card {
 		width: 90%;
 		height: auto;
-		margin-top: 12s0px;
+		margin-top: 120px;
 		padding: 20px;
 	}
 
 	.login-card-header {
-		flex-direction: row;
-		align-items: center;
+		padding: 20px 2px;
 	}
 
 	.login-card-header-title {
@@ -549,6 +548,35 @@ header {
 	}
 
 	.login-card-header-title p {
+		font-size: 16px;
+	}
+
+	.register-card {
+		width: 90%;
+		height: auto;
+		margin-top: 120px;
+		padding: 20px;
+	}
+
+	.register-terms {
+		padding: 0 10px;
+	}
+
+	.register-terms label {
+		font-size: 14px;
+	}
+
+	.register-terms input[type='checkbox'] {
+		width: 24px;
+		height: 24px;
+	}
+
+	.register-terms input[type='checkbox']:checked::after {
+		width: 12px;
+		height: 12px;
+	}
+
+	.register-card-header-title p {
 		font-size: 16px;
 	}
 }
@@ -965,6 +993,7 @@ footer {
 		flex-direction: column;
 		row-gap: 20px;
 		padding-right: 20px;
+		padding-bottom: 20px;
 	}
 
 	.footer-left-bottom-links {
