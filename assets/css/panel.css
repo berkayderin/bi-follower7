@@ -40,6 +40,10 @@ a {
 	color: inherit;
 }
 
+button {
+	font-family: 'Gilroy', sans-serif;
+}
+
 body {
 	font-family: 'Gilroy', sans-serif;
 	background-color: #edf0f5;
@@ -111,7 +115,7 @@ header {
 }
 
 .btn-orange i {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 .btn-orange:hover {
@@ -285,6 +289,7 @@ header {
 #header-nav.active {
 	display: block;
 	z-index: 1000;
+	left: 0;
 }
 
 @media (max-width: 768px) {
@@ -301,7 +306,7 @@ header {
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 270px;
+		width: 290px;
 		height: 100%;
 		background-color: #fff;
 
@@ -636,9 +641,12 @@ footer {
 	border: none;
 	border-radius: 5px;
 	color: #fff;
+	cursor: pointer;
+}
+
+.btn-black a {
 	font-size: 14px;
 	font-weight: 500;
-	cursor: pointer;
 }
 
 .btn-black i {

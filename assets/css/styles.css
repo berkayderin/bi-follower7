@@ -40,6 +40,10 @@ a {
 	color: inherit;
 }
 
+button {
+	font-family: 'Gilroy', sans-serif;
+}
+
 body {
 	font-family: 'Gilroy', sans-serif;
 	background-color: #e9f3f7;
@@ -123,7 +127,7 @@ header {
 }
 
 .btn-orange i {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 }
 
 .btn-orange:hover {
@@ -225,7 +229,7 @@ header {
 		position: fixed;
 		top: 0;
 		left: 0;
-		width: 270px;
+		width: 290px;
 		height: 100%;
 		background-color: #fff;
 
@@ -348,7 +352,8 @@ header {
 .register-terms label {
 	cursor: pointer;
 	font-size: 18px;
-	color: #212529;
+	font-weight: 500;
+	color: #2125298c;
 }
 
 .login-card-header {
@@ -481,7 +486,7 @@ header {
 	background-color: #46d3a8;
 	color: #fff;
 	font-size: 18px;
-	font-weight: 500;
+	font-weight: 600;
 	cursor: pointer;
 
 	display: flex;
@@ -571,6 +576,8 @@ header {
 
 	.register-terms label {
 		font-size: 14px;
+		font-weight: 500;
+		color: #2125298c;
 	}
 
 	.register-terms input[type='checkbox'] {
@@ -604,6 +611,7 @@ header {
 	font-size: 18px;
 	font-weight: lighter;
 	color: #212529;
+	opacity: 0.5;
 }
 
 .login-main h1 {
@@ -790,9 +798,12 @@ footer {
 	border: none;
 	border-radius: 5px;
 	color: #fff;
+	cursor: pointer;
+}
+
+.btn-black a {
 	font-size: 14px;
 	font-weight: 500;
-	cursor: pointer;
 }
 
 .btn-black i {
