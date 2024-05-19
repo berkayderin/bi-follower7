@@ -138,6 +138,8 @@ header {
 	justify-content: center;
 	align-items: center;
 	column-gap: 8px;
+
+	position: relative;
 }
 
 .btn-orange-settings i {
@@ -147,6 +149,120 @@ header {
 .btn-orange-settings:hover {
 	background-color: #af540d;
 	transition: 0.3s ease-in-out all;
+}
+
+/* açılır menü */
+.btn-orange-settings ul.settings-menu {
+	display: none; /* Hidden by default */
+	position: absolute;
+	top: 60px;
+	left: 0;
+
+	background-color: #ffffff;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+	width: 317px;
+	height: 372px;
+	border-radius: 10px;
+}
+
+.btn-orange-settings ul.settings-menu li {
+	padding: 8px 16px;
+	text-align: left;
+	border-bottom: 1px solid #70707036;
+}
+
+.btn-orange-settings ul.settings-menu li:first-child {
+	border-bottom: none;
+}
+
+.btn-orange-settings ul.settings-menu li:last-child {
+	border-bottom: none;
+}
+
+.btn-orange-settings ul.settings-menu li a {
+	color: #191b2a;
+	display: block;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.settings-menu-user {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+
+	column-gap: 30px;
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+	padding: 10px;
+	border-radius: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.settings-menu li a i {
+	color: #707070;
+	font-size: 1.2rem;
+}
+
+.settings-menu-wallet {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+
+	column-gap: 10px;
+}
+
+.settings-menu-icon {
+	color: #f78129;
+	font-size: 2.5rem !important;
+}
+
+.settings-menu-text {
+	color: #f78129;
+}
+
+.settings-menu-text p {
+	font-size: 11px;
+	font-weight: 600;
+	color: #f78129;
+}
+
+.settings-menu-p {
+	font-size: 9px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.settings-menu-text span {
+	font-size: 18px;
+	font-weight: 600;
+	color: #f78129;
+}
+
+.settings-menu-upload {
+	background-color: #46d3a8;
+	color: #fff;
+	padding: 10px 15px;
+	border-radius: 10px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.settings-upload {
+	color: #fff !important;
+	padding: 10px 15px;
+	background-color: #46d3a8;
+}
+
+.settings-upload span {
+	font-size: 9px;
+	font-weight: 600;
 }
 
 .btn-green-basket {
@@ -602,6 +718,141 @@ header {
 	}
 }
 
+/* ############ orders */
+.orders {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+
+	background-color: #ffffff;
+	width: 1300px;
+	height: 457px;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.orders-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	column-gap: 10px;
+
+	width: 100%;
+	padding: 20px 14px;
+	border-bottom: 1px solid #f78129;
+}
+
+.orders-title h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #f78129;
+}
+
+.orders-title-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #fde6d4;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+.orders-title-icon i {
+	font-size: 20px;
+	color: #fc750e;
+}
+
+.orders-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+
+	row-gap: 20px;
+}
+
+.orders-content p {
+	font-size: 18px;
+	font-weight: 500;
+	color: #212529;
+	opacity: 0.5;
+}
+
+.orders-icon {
+	font-size: 40px;
+	color: #f78129;
+}
+
+.btn-green-order {
+	width: 252px;
+	height: 60px;
+	border: none;
+	border-radius: 10px;
+	background-color: #46d3a8;
+	color: #fff;
+	font-weight: 600;
+	cursor: pointer;
+	font-size: 18px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-green-order:hover {
+	background-color: #2e9e73;
+	transition: 0.3s ease-in-out all;
+}
+
+/* ############ orders mobile */
+@media (max-width: 768px) {
+	.orders {
+		width: 90%;
+	}
+
+	.orders-title {
+		padding: 20px 10px;
+	}
+
+	.orders-title h2 {
+		font-size: 16px;
+	}
+
+	.orders-title-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.orders-title-icon i {
+		font-size: 18px;
+	}
+
+	.orders-content p {
+		font-size: 12px;
+	}
+
+	.orders-icon {
+		font-size: 30px;
+	}
+
+	.btn-green-order {
+		width: 160px;
+		height: 40px;
+		font-size: 14px;
+	}
+}
+
 /* ############ footer */
 footer {
 	display: flex;
@@ -619,7 +870,7 @@ footer {
 /* ############ footer left */
 
 .footer-left {
-	padding-left: 330px;
+	padding-left: 350px;
 	flex: 2;
 	background-color: white;
 }

@@ -46,3 +46,20 @@ document.addEventListener('DOMContentLoaded', function () {
 		})
 	})
 })
+
+// kullanıcı menüsü
+document.addEventListener('DOMContentLoaded', function () {
+	const settingsButton = document.querySelector('.btn-orange-settings')
+	const settingsMenu = settingsButton.querySelector('.settings-menu')
+
+	settingsButton.addEventListener('click', function (event) {
+		event.stopPropagation() // Olayın daha üst seviyeye çıkmasını önler
+		settingsMenu.style.display = settingsMenu.style.display === 'block' ? 'none' : 'block'
+	})
+
+	document.addEventListener('click', function (event) {
+		if (!settingsButton.contains(event.target)) {
+			settingsMenu.style.display = 'none'
+		}
+	})
+})
