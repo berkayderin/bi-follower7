@@ -45,6 +45,21 @@ body {
 	background-color: #edf0f5;
 }
 
+/* ############ container */
+.container {
+	max-width: 1550px;
+	margin: 0 auto;
+	width: 100%;
+}
+
+.container-info {
+	background-color: #f78129;
+}
+
+.container-footer {
+	background-color: #edf0f5;
+}
+
 /* ############ header */
 header {
 	display: flex;
@@ -349,7 +364,9 @@ header {
 
 	background-color: #f78129;
 	height: 250px;
-	margin-left: auto;
+	max-width: 2000px;
+	width: 100%;
+	margin: 0 auto;
 }
 
 .info-left {
@@ -589,6 +606,10 @@ footer {
 	align-items: center;
 
 	background-color: white;
+
+	max-width: 2000px;
+	margin: 0 auto;
+	width: 100%;
 }
 
 /* ############ footer left */
