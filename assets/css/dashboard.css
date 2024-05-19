@@ -2203,9 +2203,11 @@ footer {
 	}
 
 	.footer-left-bottom h5 {
+		font-size: 20px;
 		font-weight: 500;
 		color: #081839;
 		margin-bottom: 10px;
+		position: relative;
 	}
 
 	.footerRight {
