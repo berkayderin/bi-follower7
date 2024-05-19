@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dashboard | Follower7</title>
+		<title>Siparişlerim | Follower7</title>
 		<link rel="stylesheet" href="./assets/css/dashboard.css" />
 		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 	</head>
@@ -172,8 +172,8 @@
 			<a href="#" class="tabs-menu-item-link"><i class="ri-heart-fill"></i>Favori Servislerim</a>
 		</div>
 
-		<!--############ siparişlerim -->
-		<div class="orders">
+		<!--############ content -->
+		<div class="orders orders-2">
 			<div class="orders-title">
 				<div class="orders-title-icon">
 					<i class="ri-shopping-basket-fill"></i>
@@ -181,54 +181,62 @@
 				<h2>Siparişlerim</h2>
 			</div>
 			<div class="orders-content">
-				<i class="ri-shopping-basket-fill orders-icon"></i>
-				<p>Henüz sipariş vermediniz.</p>
-				<button class="btn-green-order">
-					<a href="#"
-						>Sipariş ver
-						<i class="ri-arrow-right-s-line"></i>
-					</a>
-				</button>
-			</div>
-		</div>
-
-		<!--############ bakiye geçmişi -->
-		<div class="orders">
-			<div class="orders-title">
-				<div class="orders-title-icon">
-					<i class="ri-wallet-3-fill"></i>
+				<div class="responsive-table">
+					<table>
+						<thead>
+							<tr>
+								<th>Ürün:</th>
+								<th>Link:</th>
+								<th>Tarih:</th>
+								<th>Tutar:</th>
+								<th>İşlem:</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Instagram 100.000 Takipçi</td>
+								<td>https://www.instagram.com/username</td>
+								<td>12.05.2021</td>
+								<td>100,00€</td>
+								<td class="text-success">Gerçekleşti</td>
+							</tr>
+							<tr>
+								<td>Instagram 100.000 Takipçi</td>
+								<td>https://www.instagram.com/username</td>
+								<td>12.05.2021</td>
+								<td>100,00€</td>
+								<td class="text-danger">Gerçekleşti</td>
+							</tr>
+							<tr>
+								<td>Instagram 100.000 Takipçi</td>
+								<td>https://www.instagram.com/username</td>
+								<td>12.05.2021</td>
+								<td>100,00€</td>
+								<td class="text-success">Gerçekleşti</td>
+							</tr>
+							<tr>
+								<td>Instagram 100.000 Takipçi</td>
+								<td>https://www.instagram.com/username</td>
+								<td>12.05.2021</td>
+								<td>100,00€</td>
+								<td class="text-danger">Gerçekleşti</td>
+							</tr>
+							<tr>
+								<td>Instagram 100.000 Takipçi</td>
+								<td>https://www.instagram.com/username</td>
+								<td>12.05.2021</td>
+								<td>100,00€</td>
+								<td class="text-success">Gerçekleşti</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<h2>Bakiye Geçmişi</h2>
-			</div>
-			<div class="orders-content">
-				<i class="ri-shopping-basket-fill orders-icon"></i>
-				<p>Daha önce bakiye eklemediniz.</p>
-				<button class="btn-green-order">
-					<a href="#"
-						>Bakiye ekleyin
-						<i class="ri-arrow-right-s-line"></i>
-					</a>
-				</button>
-			</div>
-		</div>
-
-		<!--############ kuponlar -->
-		<div class="orders">
-			<div class="orders-title">
-				<div class="orders-title-icon">
-					<i class="ri-coupon-2-fill"></i>
+				<!-- circle pagination -->
+				<div class="circle-pagination">
+					<a href="#" class="circle-pagination-item active"></a>
+					<a href="#" class="circle-pagination-item"></a>
+					<a href="#" class="circle-pagination-item"></a>
 				</div>
-				<h2>Kupon Kullanımı</h2>
-			</div>
-			<div class="orders-content">
-				<i class="ri-shopping-basket-fill orders-icon"></i>
-				<p>Daha önce kupon kullanmadınız.</p>
-				<button class="btn-green-order">
-					<a href="#"
-						>Kuponları keşfedin.
-						<i class="ri-arrow-right-s-line"></i>
-					</a>
-				</button>
 			</div>
 		</div>
 

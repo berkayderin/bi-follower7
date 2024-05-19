@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
 		overlay.style.display = nav.classList.contains('active') ? 'block' : 'none'
 	})
 
-	// Close the nav and hide overlay when clicking on the overlay
 	overlay.addEventListener('click', function () {
 		nav.classList.remove('active')
 		overlay.style.display = 'none'
@@ -53,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const settingsMenu = settingsButton.querySelector('.settings-menu')
 
 	settingsButton.addEventListener('click', function (event) {
-		event.stopPropagation() // Olayın daha üst seviyeye çıkmasını önler
+		event.stopPropagation()
 		settingsMenu.style.display = settingsMenu.style.display === 'block' ? 'none' : 'block'
 	})
 
@@ -63,3 +62,26 @@ document.addEventListener('DOMContentLoaded', function () {
 		}
 	})
 })
+
+// toggle switch push
+function activateToggle(element, isOn) {
+	var toggleSwitch = element.parentNode
+	var toggleOn = toggleSwitch.querySelector('.toggle-on')
+	var toggleOff = toggleSwitch.querySelector('.toggle-off')
+
+	if (isOn) {
+		toggleOn.style.backgroundColor = '#46d3a8' // Açık rengi
+		toggleOn.style.color = 'white'
+		toggleOn.textContent = 'Açık'
+		toggleOff.style.backgroundColor = '#fff' // Pasif rengi
+		toggleOff.style.color = '#555'
+		toggleOff.textContent = 'Kapat'
+	} else {
+		toggleOn.style.backgroundColor = '#fff' // Pasif rengi
+		toggleOn.style.color = '#555'
+		toggleOn.textContent = 'Aç'
+		toggleOff.style.backgroundColor = '#d34646' // Kapalı rengi
+		toggleOff.style.color = 'white'
+		toggleOff.textContent = 'Kapalı'
+	}
+}

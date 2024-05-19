@@ -853,6 +853,524 @@ header {
 	}
 }
 
+/* ############ order tables */
+.responsive-table {
+	width: 100%;
+	overflow-x: auto;
+	padding: 0px 20px;
+}
+
+table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+table,
+td {
+	border-bottom: 1px solid #70707071;
+}
+
+th {
+	color: #f78129;
+	font-weight: 600;
+	text-align: left;
+	padding: 8px;
+	font-size: 18px;
+}
+
+td {
+	text-align: left;
+	padding: 8px;
+	color: #191b2a;
+	font-weight: 500;
+	font-size: 18px;
+}
+
+thead {
+	color: #f78129;
+}
+
+.text-success {
+	color: #46d3a8;
+}
+
+.text-danger {
+	color: #ff4d3c;
+}
+
+@media (max-width: 768px) {
+	.orders-2 {
+		height: 100%;
+		padding: 20px 10px;
+	}
+
+	table {
+		font-size: 14px;
+	}
+
+	th {
+		font-size: 14px;
+	}
+
+	td {
+		font-size: 14px;
+	}
+}
+
+/* ############ circle pagination */
+.circle-pagination {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	column-gap: 10px;
+	margin-top: 20px;
+}
+
+.circle-pagination-item {
+	background-color: #70707094;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	cursor: pointer;
+}
+
+.circle-pagination-item.active {
+	background-color: #f78129;
+}
+
+/* ############ hesabım: push */
+.push {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	background-color: #ffffff;
+
+	width: 1300px;
+	height: 457px;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.push-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+
+	column-gap: 10px;
+	width: 100%;
+	padding: 20px 14px;
+	border-bottom: 1px solid #f78129;
+}
+
+.push-title h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #f78129;
+}
+
+.push-title-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	background-color: #fde6d4;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+.push-title-icon i {
+	font-size: 20px;
+	color: #fc750e;
+}
+
+.push-content {
+	width: 100%;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	row-gap: 20px;
+	padding: 30px 80px;
+}
+
+.push-content-item {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	border-bottom: 1px solid #70707073;
+	padding: 10px 0;
+}
+
+.push-content p {
+	font-size: 18px;
+	font-weight: 500;
+	color: #191b2a;
+	opacity: 0.5;
+}
+
+.push-icon {
+	font-size: 40px;
+	color: #f78129;
+}
+
+/* ############ push mobile */
+@media (max-width: 768px) {
+	.push {
+		width: 90%;
+	}
+
+	.push-title {
+		padding: 20px 10px;
+	}
+
+	.push-title h2 {
+		font-size: 16px;
+	}
+
+	.push-title-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.push-title-icon i {
+		font-size: 18px;
+	}
+
+	.push-content p {
+		font-size: 12px;
+	}
+
+	.push-icon {
+		font-size: 30px;
+	}
+
+	.push-content {
+		padding: 20px 10px;
+	}
+
+	.push-content-item {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		column-gap: 10px;
+
+		padding: 10px 0;
+	}
+
+	.push-content-item p {
+		font-size: 14px;
+	}
+
+	.push-content-item span {
+		font-size: 14px;
+	}
+}
+
+/* ############ Açık Kapalı yazan toggle switch */
+.toggle-switch {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffff;
+	border-radius: 25px;
+	width: 118px;
+	height: 38px;
+	border: 2px solid #eaeaeb;
+	padding: 10px;
+	cursor: pointer;
+}
+
+.toggle-on,
+.toggle-off {
+	width: 50px;
+	height: 24px;
+	color: white;
+	border-radius: 25px;
+	font-size: 13px;
+	font-weight: 600;
+	padding: 10px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.toggle-on {
+	background-color: #fff; /* Pasif rengi */
+	color: #707070;
+}
+
+.toggle-off {
+	background-color: #d34646; /* Aktif rengi */
+}
+
+/* ############ hesabım: personal-info */
+.container-personal-info {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	max-width: 2000px;
+	margin: 0 auto;
+	width: 100%;
+
+	margin-top: 50px;
+	column-gap: 100px;
+}
+
+.personal-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+
+	background-color: #ffffff;
+	width: 600px;
+	height: 566px;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.personal-info-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	column-gap: 10px;
+	width: 100%;
+	padding: 20px 14px;
+	border-bottom: 1px solid #f78129;
+}
+
+.personal-info-title h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #f78129;
+}
+
+.personal-info-title-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fde6d4;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+.personal-info-title-icon i {
+	font-size: 20px;
+	color: #fc750e;
+}
+
+.personal-info-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 20px;
+	padding: 30px 80px;
+}
+
+.input-group-2 {
+	position: relative;
+	width: 400px;
+	height: 90px;
+}
+
+.input-group-2 img {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.input-group-2 img:first-child {
+	left: 20px;
+}
+
+.input-group-2.password-group img.eye-icon {
+	right: 20px;
+}
+
+.input-group-2 input {
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-radius: 10px;
+	background-color: #edf0f5;
+	padding: 0 60px;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+.btn-green-login {
+	width: 252px;
+	height: 60px;
+	border: none;
+	border-radius: 10px;
+	background-color: #46d3a8;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-green-login i {
+	font-size: 1.5rem;
+}
+
+.btn-green-login:hover {
+	background-color: #f78129;
+	transition: 0.3s ease-in-out all;
+}
+
+/* ############ password change */
+.password-change {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	background-color: #ffffff;
+
+	width: 600px;
+	height: 566px;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.password-change-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	column-gap: 10px;
+	width: 100%;
+	padding: 20px 14px;
+	border-bottom: 1px solid #f78129;
+}
+
+.password-change-title h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #f78129;
+}
+
+.password-change-title-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fde6d4;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+.password-change-title-icon i {
+	font-size: 20px;
+	color: #fc750e;
+}
+
+.password-change-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 20px;
+	padding: 30px 80px;
+}
+/* ############ hesabım: personal-info  && password change mobile */
+@media (max-width: 768px) {
+	.container-personal-info {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 50px;
+	}
+
+	.personal-info {
+		width: 90%;
+	}
+
+	.personal-info-title {
+		padding: 20px 10px;
+	}
+
+	.personal-info-title h2 {
+		font-size: 16px;
+	}
+
+	.personal-info-title-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.personal-info-title-icon i {
+		font-size: 18px;
+	}
+
+	.personal-info-content {
+		padding: 20px 10px;
+	}
+
+	.input-group-2 {
+		width: 100%;
+	}
+
+	.input-group-2 input {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.btn-green-login {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.password-change {
+		width: 90%;
+	}
+
+	.password-change-title {
+		padding: 20px 10px;
+	}
+
+	.password-change-title h2 {
+		font-size: 16px;
+	}
+
+	.password-change-title-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.password-change-title-icon i {
+		font-size: 18px;
+	}
+
+	.password-change-content {
+		padding: 20px 10px;
+	}
+}
+
 /* ############ footer */
 footer {
 	display: flex;

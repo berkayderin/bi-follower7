@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dashboard | Follower7</title>
+		<title>Bakiye Geçmişi | Follower7</title>
 		<link rel="stylesheet" href="./assets/css/dashboard.css" />
 		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 	</head>
@@ -172,8 +172,8 @@
 			<a href="#" class="tabs-menu-item-link"><i class="ri-heart-fill"></i>Favori Servislerim</a>
 		</div>
 
-		<!--############ siparişlerim -->
-		<div class="orders">
+		<!--############ content -->
+		<div class="orders orders-2">
 			<div class="orders-title">
 				<div class="orders-title-icon">
 					<i class="ri-shopping-basket-fill"></i>
@@ -181,54 +181,74 @@
 				<h2>Siparişlerim</h2>
 			</div>
 			<div class="orders-content">
-				<i class="ri-shopping-basket-fill orders-icon"></i>
-				<p>Henüz sipariş vermediniz.</p>
-				<button class="btn-green-order">
-					<a href="#"
-						>Sipariş ver
-						<i class="ri-arrow-right-s-line"></i>
-					</a>
-				</button>
-			</div>
-		</div>
-
-		<!--############ bakiye geçmişi -->
-		<div class="orders">
-			<div class="orders-title">
-				<div class="orders-title-icon">
-					<i class="ri-wallet-3-fill"></i>
+				<div class="responsive-table">
+					<table>
+						<thead>
+							<tr>
+								<th>Tutar:</th>
+								<th>Ödeme Yöntemi:</th>
+								<th>Komisyon:</th>
+								<th>Bonus:</th>
+								<th>Tarih:</th>
+								<th>Toplam Tutar:</th>
+								<th>Gerçekleşen:</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>100.000€</td>
+								<td>Paypal</td>
+								<td>%0</td>
+								<td>+3€</td>
+								<td>12.12.2021</td>
+								<td>100.003€</td>
+								<td class="text-success">100.003€</td>
+							</tr>
+							<tr>
+								<td>100.000€</td>
+								<td>Paypal</td>
+								<td>%0</td>
+								<td>+3€</td>
+								<td>12.12.2021</td>
+								<td>100.003€</td>
+								<td class="text-success">100.003€</td>
+							</tr>
+							<tr>
+								<td>100.000€</td>
+								<td>Paypal</td>
+								<td>%0</td>
+								<td>+3€</td>
+								<td>12.12.2021</td>
+								<td>100.003€</td>
+								<td class="text-success">100.003€</td>
+							</tr>
+							<tr>
+								<td>100.000€</td>
+								<td>Paypal</td>
+								<td>%0</td>
+								<td>+3€</td>
+								<td>12.12.2021</td>
+								<td>100.003€</td>
+								<td class="text-success">100.003€</td>
+							</tr>
+							<tr>
+								<td>100.000€</td>
+								<td>Paypal</td>
+								<td>%0</td>
+								<td>+3€</td>
+								<td>12.12.2021</td>
+								<td>100.003€</td>
+								<td class="text-success">100.003€</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<h2>Bakiye Geçmişi</h2>
-			</div>
-			<div class="orders-content">
-				<i class="ri-shopping-basket-fill orders-icon"></i>
-				<p>Daha önce bakiye eklemediniz.</p>
-				<button class="btn-green-order">
-					<a href="#"
-						>Bakiye ekleyin
-						<i class="ri-arrow-right-s-line"></i>
-					</a>
-				</button>
-			</div>
-		</div>
-
-		<!--############ kuponlar -->
-		<div class="orders">
-			<div class="orders-title">
-				<div class="orders-title-icon">
-					<i class="ri-coupon-2-fill"></i>
+				<!-- circle pagination -->
+				<div class="circle-pagination">
+					<a href="#" class="circle-pagination-item active"></a>
+					<a href="#" class="circle-pagination-item"></a>
+					<a href="#" class="circle-pagination-item"></a>
 				</div>
-				<h2>Kupon Kullanımı</h2>
-			</div>
-			<div class="orders-content">
-				<i class="ri-shopping-basket-fill orders-icon"></i>
-				<p>Daha önce kupon kullanmadınız.</p>
-				<button class="btn-green-order">
-					<a href="#"
-						>Kuponları keşfedin.
-						<i class="ri-arrow-right-s-line"></i>
-					</a>
-				</button>
 			</div>
 		</div>
 

@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Dashboard | Follower7</title>
+		<title>Hesabım | Follower7</title>
 		<link rel="stylesheet" href="./assets/css/dashboard.css" />
 		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
 	</head>
@@ -172,63 +172,105 @@
 			<a href="#" class="tabs-menu-item-link"><i class="ri-heart-fill"></i>Favori Servislerim</a>
 		</div>
 
-		<!--############ siparişlerim -->
-		<div class="orders">
-			<div class="orders-title">
-				<div class="orders-title-icon">
-					<i class="ri-shopping-basket-fill"></i>
+		<div class="container-personal-info">
+			<!--############ personel info card -->
+			<div class="personal-info">
+				<div class="personal-info-title">
+					<div class="personal-info-title-icon">
+						<i class="ri-user-fill"></i>
+					</div>
+					<h2>Kişisel Bilgiler</h2>
 				</div>
-				<h2>Siparişlerim</h2>
-			</div>
-			<div class="orders-content">
-				<i class="ri-shopping-basket-fill orders-icon"></i>
-				<p>Henüz sipariş vermediniz.</p>
-				<button class="btn-green-order">
-					<a href="#"
-						>Sipariş ver
+				<div class="personal-info-content">
+					<div class="input-group-2">
+						<img src="./assets/img/icons/ico_user.png" alt="User Icon" />
+						<input type="text" id="name" name="name" placeholder="Adınız Soyadınız" />
+					</div>
+					<div class="input-group-2">
+						<img src="./assets/img/icons/ico_phone.png" alt="User Icon" />
+						<input type="text" id="phone" name="phone" placeholder="Telefon Numaranız" />
+					</div>
+					<div class="input-group-2">
+						<img src="./assets/img/icons/ico_mail.png" alt="Mail Icon" />
+						<input type="email" id="email" name="email" placeholder="E-posta Adresiniz" />
+					</div>
+					<button class="btn-green-login">
+						Bilgilerimi Güncelle
 						<i class="ri-arrow-right-s-line"></i>
-					</a>
-				</button>
+					</button>
+				</div>
+			</div>
+
+			<!--############ password change -->
+			<div class="password-change">
+				<div class="password-change-title">
+					<div class="password-change-title-icon">
+						<i class="ri-lock-fill"></i>
+					</div>
+					<h2>Şifre Değiştir</h2>
+				</div>
+				<div class="password-change-content">
+					<div class="input-group-2">
+						<img src="./assets/img/icons/ico_password.png" alt="Password Icon" />
+						<input type="password" id="password" name="password" placeholder="Mevcut Parolanız" />
+					</div>
+					<div class="input-group-2">
+						<img src="./assets/img/icons/ico_password.png" alt="Password Icon" />
+						<input type="password" id="password" name="password" placeholder="Yeni Parolanız" />
+					</div>
+					<div class="input-group-2">
+						<img src="./assets/img/icons/ico_password.png" alt="Password Icon" />
+						<input type="password" id="password" name="password" placeholder="Yeni Parolanız (Tekrar)" />
+					</div>
+					<button class="btn-green-login">
+						Parolamı Güncelle
+						<i class="ri-arrow-right-s-line"></i>
+					</button>
+				</div>
 			</div>
 		</div>
 
-		<!--############ bakiye geçmişi -->
-		<div class="orders">
-			<div class="orders-title">
-				<div class="orders-title-icon">
-					<i class="ri-wallet-3-fill"></i>
+		<!--############ push main -->
+		<div class="push">
+			<div class="push-title">
+				<div class="push-title-icon">
+					<i class="ri-notification-3-fill"></i>
 				</div>
-				<h2>Bakiye Geçmişi</h2>
+				<h2>Bildirim Ayarları</h2>
 			</div>
-			<div class="orders-content">
-				<i class="ri-shopping-basket-fill orders-icon"></i>
-				<p>Daha önce bakiye eklemediniz.</p>
-				<button class="btn-green-order">
-					<a href="#"
-						>Bakiye ekleyin
-						<i class="ri-arrow-right-s-line"></i>
-					</a>
-				</button>
-			</div>
-		</div>
-
-		<!--############ kuponlar -->
-		<div class="orders">
-			<div class="orders-title">
-				<div class="orders-title-icon">
-					<i class="ri-coupon-2-fill"></i>
+			<div class="push-content">
+				<!-- İlk Öğe -->
+				<div class="push-content-item">
+					<p>SMS İle Satın Alma Bilgilendirmesi Yapılsın</p>
+					<div class="toggle-switch">
+						<span class="toggle-on" onclick="activateToggle(this, true)">Aç</span>
+						<span class="toggle-off" onclick="activateToggle(this, false)">Kapalı</span>
+					</div>
 				</div>
-				<h2>Kupon Kullanımı</h2>
-			</div>
-			<div class="orders-content">
-				<i class="ri-shopping-basket-fill orders-icon"></i>
-				<p>Daha önce kupon kullanmadınız.</p>
-				<button class="btn-green-order">
-					<a href="#"
-						>Kuponları keşfedin.
-						<i class="ri-arrow-right-s-line"></i>
-					</a>
-				</button>
+				<!-- İkinci Öğe -->
+				<div class="push-content-item">
+					<p>SMS İle Kampanya Bilgilendirmesi Yapılsın</p>
+					<div class="toggle-switch">
+						<span class="toggle-on" onclick="activateToggle(this, true)">Aç</span>
+						<span class="toggle-off" onclick="activateToggle(this, false)">Kapalı</span>
+					</div>
+				</div>
+				<!-- Üçüncü Öğe -->
+				<div class="push-content-item">
+					<p>E-Posta İle Satın Alma Bilgilendirmesi Yapılsın</p>
+					<div class="toggle-switch">
+						<span class="toggle-on" onclick="activateToggle(this, true)">Aç</span>
+						<span class="toggle-off" onclick="activateToggle(this, false)">Kapalı</span>
+					</div>
+				</div>
+				<!-- Dördüncü Öğe -->
+				<div class="push-content-item">
+					<p>E-Posta İle Destek Talebi Bilgilendirmesi Yapılsın</p>
+					<div class="toggle-switch">
+						<span class="toggle-on" onclick="activateToggle(this, true)">Aç</span>
+						<span class="toggle-off" onclick="activateToggle(this, false)">Kapalı</span>
+					</div>
+				</div>
 			</div>
 		</div>
 
