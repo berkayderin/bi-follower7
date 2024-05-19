@@ -46,7 +46,8 @@ body {
 span {
 	color: #ff822b;
 }
-.main-container {
+/* main masaüstü */
+.main {
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -64,29 +65,168 @@ span {
 	flex-direction: column;
 	justify-content: center;
 	align-items: start;
+
 	gap: 40px;
 }
 
-.input-group {
+.search {
 	position: relative;
 	width: 636px;
 	height: 90px;
 }
-
-.input-group .search-icon {
+.search i {
 	position: absolute;
 	top: 50%;
-	right: 20px;
+	left: 18px;
 	transform: translateY(-50%);
+	font-size: 24px;
 }
 
-.input-group input {
+.search input {
 	width: 100%;
 	height: 100%;
 	border: none;
+	outline: none;
 	border-radius: 10px;
 	background-color: #fff;
 	padding: 0 60px;
 	font-size: 18px;
 	font-weight: 300;
+	font-family: 'Gilroy', sans-serif;
+}
+
+.search button {
+	position: absolute;
+	top: 50%;
+	right: 20px;
+	transform: translateY(-50%);
+	background-color: #ff822b;
+	color: #fff;
+	border: none;
+	outline: none;
+	border-radius: 10px;
+	padding: 30px;
+	font-weight: 500;
+	cursor: pointer;
+}
+.search button i {
+	font-size: 24px;
+}
+
+/* main mobile */
+@media (max-width: 768px) {
+	.main {
+		flex-direction: column;
+	}
+	.main-image {
+		display: none;
+	}
+	.main-left {
+		display: none;
+	}
+	.main-right {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 40px;
+	}
+	form {
+		width: 100%;
+	}
+	.search {
+		width: 100%;
+	}
+	.search input {
+		width: 100%;
+		font-size: 16px;
+	}
+	.search button {
+		padding: 20px;
+	}
+	.search i {
+		left: 10px;
+		font-size: 21px;
+	}
+}
+
+/* tabbar */
+.tabbar-container {
+	width: 100%;
+	max-width: 1450px;
+	background-color: #edf0f5;
+	margin: 0 auto;
+}
+.tabbar {
+	display: flex;
+
+	justify-content: space-evenly;
+	align-items: center;
+	background-color: #fff;
+}
+.tab {
+	display: flex;
+	justify-content: center;
+	align-items: start;
+	gap: 10px;
+}
+.tabbar-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgba(255, 130, 43, 20%);
+	border-radius: 10px;
+
+	height: 80px;
+	width: 80px;
+	padding: 20px 25px;
+	margin-right: 20px;
+}
+.tabbar-icon i {
+	font-size: 30px;
+	color: #ff822b;
+}
+.tabbar-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 7px;
+}
+.tabbar-text h3 {
+	font-size: 20px;
+	font-weight: 600;
+	color: #ff822b;
+}
+.tabbar-text p {
+	font-size: 16px;
+	font-weight: 400;
+	color: #48474f;
+}
+
+.divider {
+	height: 120px; /* Yüksekliği tab'lara uygun olarak ayarlayın */
+	width: 1px;
+	background-color: #edf0f5; /* Siyah renkte çizgi */
+}
+
+/* tabbar mobile */
+@media (max-width: 768px) {
+	.tabbar {
+		flex-direction: column;
+		padding: 10px;
+		gap: 20px;
+	}
+	.divider {
+		display: none;
+	}
+	.tabbar-icon {
+		width: 20%;
+	}
+	.tabbar-text {
+		width: 80%;
+	}
+	.tab {
+		width: 100%;
+	}
 }
