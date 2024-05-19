@@ -1653,6 +1653,241 @@ thead {
 	transition: 0.3s ease-in-out all;
 }
 
+/* ############ basket ve basket cards mobile */
+@media (max-width: 768px) {
+	.container-basket {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 5px;
+	}
+
+	.basket-card {
+		margin: 0 auto;
+		width: 90%;
+		height: 100%;
+		margin-top: 50px;
+	}
+
+	.basket-card-title {
+		padding: 20px 10px;
+	}
+
+	.basket-card-title h2 {
+		font-size: 16px;
+	}
+
+	.basket-card-title-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.basket-card-title-icon i {
+		font-size: 18px;
+	}
+
+	.basket-card-content {
+		padding: 20px 10px;
+	}
+
+	.basket-card-details {
+		width: 90%;
+		height: 100%;
+	}
+
+	.basket-card-details-title {
+		padding: 20px 10px;
+	}
+
+	.basket-card-details-title h2 {
+		font-size: 16px;
+	}
+
+	.basket-card-details-title-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.basket-card-details-title-icon i {
+		font-size: 18px;
+	}
+
+	.basket-card-details-content {
+		padding: 20px 10px;
+	}
+
+	.basket-card-details-content-item {
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		column-gap: 10px;
+
+		padding: 10px 0;
+	}
+
+	.basket-card-details-content-item p {
+		font-size: 14px;
+	}
+
+	.basket-card-details-content-item span {
+		font-size: 14px;
+	}
+
+	.basket-card-details-content-coupons {
+		height: 100%;
+	}
+
+	.basket-card-details-content-coupons p {
+		font-size: 14px;
+	}
+
+	.basket-card-details-content-coupons-input {
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		column-gap: 10px;
+
+		padding: 10px 0;
+	}
+
+	.input-icon-container {
+		width: 100%;
+	}
+
+	.input-icon-container input {
+		width: 100%;
+		font-size: 14px;
+	}
+
+	.btn-green-check {
+		width: 70px;
+		height: 65px;
+		font-size: 14px;
+	}
+
+	.basket-card-details-content-buttons {
+		margin-top: 20px;
+	}
+
+	.badge-delete {
+		position: relative;
+		top: 25px;
+	}
+}
+
+/* ############ social media */
+.social-media {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.social-media-title {
+	text-align: center;
+	font-size: 30px;
+	font-weight: 600;
+	color: #ff822b;
+	margin-bottom: 15px;
+}
+.social-media-p {
+	font-size: 16px;
+	font-weight: 400;
+	color: #000;
+	margin-bottom: 40px;
+}
+
+.social-media-tabs {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+.social-media-tab {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+
+	column-gap: 10px;
+	width: 180px;
+	height: 60px;
+	color: #fff;
+	border-radius: 10px;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+
+.social-media-tab h1 {
+	font-weight: bold;
+	font-size: 12px;
+	margin-bottom: 2px;
+}
+
+.social-media-tab p {
+	width: 100%;
+	font-size: 12px;
+}
+
+.social-media-tab i {
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px;
+	font-size: 31px;
+}
+.instagram {
+	background: #e1306c;
+}
+.tiktok {
+	background: #101626;
+}
+.facebook {
+	background: #1873eb;
+}
+.twitter {
+	background: #101626;
+}
+.youtube {
+	background: #ff0000;
+}
+.threads {
+	background: #333;
+}
+.twitch {
+	background: #8d45f8;
+}
+.google {
+	background: #ff822a;
+}
+.discord {
+	background: #5865f2;
+}
+.linkedin {
+	background: #026fac;
+}
+.telegram {
+	background: #34a6d8;
+}
+.spotify {
+	background: #22974c;
+}
+.snapchat {
+	background: #bfad14;
+}
+.kick {
+	background: #00b662;
+}
+
+/* social media mobile */
+@media (max-width: 768px) {
+	.tabbar-container {
+		display: none;
+	}
+	.none {
+		display: none;
+	}
+}
+
 /* ############ footer */
 footer {
 	display: flex;
