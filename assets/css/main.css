@@ -855,10 +855,10 @@ span {
 	font-weight: 600;
 	margin-bottom: 25px;
 }
-ul {
+.container-texts ul {
 	padding: 20px;
 }
-ul li {
+.container-texts ul li {
 	list-style-type: disc;
 	margin-left: 20px;
 }
