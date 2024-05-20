@@ -782,23 +782,26 @@ span {
 }
 
 .subtitle {
-	font-size: 2rem;
-
-	margin-top: 0.5rem;
-	margin-bottom: 0.5rem;
+	margin-top: 0.6rem;
+	margin-bottom: 0.6rem;
 	font-weight: 500;
-	line-height: 1.2;
+	color: rgb(33, 37, 41);
+	font-size: 32px;
+	line-height: 38px;
 }
 
 .text {
-	color: #4e525d;
+	color: rgb(78, 82, 93);
 	font-size: 17px;
-	line-height: 1.6;
+	line-height: 26px;
+	font-weight: 400;
+	margin-bottom: 0.4rem;
 }
 
 .titles {
 	color: #000b33;
 	font-size: 22px;
+	line-height: 26px;
 	font-weight: 600;
 	margin-bottom: 25px;
 }
@@ -808,4 +811,11 @@ ul {
 ul li {
 	list-style-type: disc;
 	margin-left: 20px;
+}
+
+.text strong {
+	color: rgb(78, 82, 93);
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 26px;
 }
