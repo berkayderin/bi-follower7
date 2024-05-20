@@ -97,3 +97,11 @@ document.addEventListener('DOMContentLoaded', function () {
 		overlay.style.display = 'none'
 	})
 })
+
+// copy to clipboard
+function copyToClipboard() {
+	const copyText = document.getElementById('coupon-input')
+	copyText.select()
+	copyText.setSelectionRange(0, 99999)
+	navigator.clipboard.writeText(copyText.value)
+}

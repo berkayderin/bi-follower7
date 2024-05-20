@@ -2446,3 +2446,262 @@ footer {
 		font-size: 1.2rem;
 	}
 }
+
+/* ############ kupon kullanımı  */
+.coupons {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+
+	margin: 50px 0;
+}
+
+.coupon {
+	width: 380px;
+	height: 441px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #e9f3f7;
+	border-radius: 10px;
+}
+
+.coupon-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	column-gap: 10px;
+	width: 100%;
+	padding: 20px 14px;
+	border-bottom: 1px solid #707070;
+}
+
+.coupon-title h2 {
+	font-size: 16px;
+	font-weight: 600;
+	color: #191b2a;
+}
+
+.coupon-title-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fde6d4;
+	padding: 12px;
+	border-radius: 10px;
+}
+
+.coupon-title-icon i {
+	font-size: 20px;
+	color: #fc750e;
+}
+
+.coupon-info {
+	font-size: 16px;
+	color: #191b2a;
+	text-align: center;
+	font-weight: 400;
+}
+
+.coupon-content {
+	width: 100%;
+	padding: 0px 20px;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	row-gap: 40px;
+
+	margin-bottom: 35px;
+}
+
+.coupon-usage {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	border-bottom: 1px solid #707070;
+	padding: 10px 0;
+}
+
+.coupon-usage p {
+	font-weight: 400;
+	font-size: 16px;
+	color: #191b2a;
+}
+
+.coupon-input {
+	position: relative;
+	width: 100%;
+}
+
+.coupon-input input {
+	width: 100%;
+	height: 50px;
+	border: 2px dashed #46d3a8;
+	border-radius: 10px;
+	background-color: #46d3a918;
+	padding: 0 50px 0 20px;
+	font-size: 16px;
+	font-weight: 600;
+	color: #191b2a;
+}
+
+.coupon-input input::placeholder {
+	font-size: 16px;
+	font-weight: 600;
+	color: #191b2a72;
+}
+
+.coupon-input input:focus {
+	outline: none;
+}
+
+.btn-green-copy {
+	position: absolute;
+	right: 10px;
+	top: 5px;
+	width: 40px;
+	height: 40px;
+	border: none;
+	border-radius: 10px;
+	background-color: #46d3a8;
+	color: #fff;
+	font-weight: 400;
+	cursor: pointer;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.coupons-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+
+	background-color: #ffffff;
+	width: 1300px;
+	height: 1162px;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.coupons-container-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	column-gap: 10px;
+	width: 100%;
+	padding: 20px 14px;
+	border-bottom: 1px solid #f78129;
+}
+
+.coupons-container-title h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #f78129;
+}
+
+.coupons-container-title-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fde6d4;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+.coupons-container-title-icon i {
+	font-size: 20px;
+	color: #fc750e;
+}
+
+/* ############ kupon kullanımı mobile */
+@media (max-width: 768px) {
+	.coupons-container {
+		width: 90%;
+		height: 100%;
+	}
+
+	.coupons-container-title {
+		padding: 20px 10px;
+	}
+
+	.coupons-container-title h2 {
+		font-size: 16px;
+	}
+
+	.coupons-container-title-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.coupons-container-title-icon i {
+		font-size: 18px;
+	}
+
+	.coupon {
+		width: 90%;
+	}
+
+	.coupon-title {
+		padding: 20px 10px;
+	}
+
+	.coupon-title h2 {
+		font-size: 16px;
+	}
+
+	.coupon-title-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.coupon-title-icon i {
+		font-size: 18px;
+	}
+
+	.coupon-info {
+		font-size: 14px;
+	}
+
+	.coupon-content {
+		padding: 0px 10px;
+	}
+
+	.coupon-usage {
+		padding: 10px 0;
+	}
+
+	.coupon-usage p {
+		font-size: 14px;
+	}
+
+	.coupon-input input {
+		height: 40px;
+		font-size: 14px;
+	}
+
+	.coupon-input input::placeholder {
+		font-size: 14px;
+	}
+
+	.btn-green-copy {
+		width: 30px;
+		height: 30px;
+		font-size: 14px;
+	}
+}
