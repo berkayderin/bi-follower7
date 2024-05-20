@@ -117,6 +117,7 @@ span {
 @media (max-width: 768px) {
 	.main {
 		flex-direction: column;
+		padding: 20px;
 	}
 	.main-image {
 		display: none;
@@ -130,6 +131,11 @@ span {
 		justify-content: center;
 		align-items: center;
 		gap: 40px;
+		text-align: center;
+	}
+	.main-right h1 {
+		font-size: 28px;
+		margin-bottom: 28px;
 	}
 	form {
 		width: 100%;
@@ -205,9 +211,9 @@ span {
 }
 
 .divider {
-	height: 120px; /* Yüksekliği tab'lara uygun olarak ayarlayın */
+	height: 120px;
 	width: 1px;
-	background-color: #edf0f5; /* Siyah renkte çizgi */
+	background-color: #edf0f5;
 }
 
 /* tabbar mobile */
@@ -337,10 +343,15 @@ span {
 @media (max-width: 768px) {
 	.social-media-title {
 		font-size: 24px;
+		text-align: center;
 	}
 	.social-media-p {
 		font-size: 14px;
 		padding: 5px;
+		text-align: center;
+	}
+	.social-media-top {
+		padding: 0 20px;
 	}
 	.social-media-tabs {
 		flex-direction: column;
@@ -703,11 +714,13 @@ span {
 }
 
 .faq-question {
+	font-size: 17px;
+	line-height: 26px;
+	font-weight: 400;
+	color: rgb(56, 69, 93);
 	width: 100%;
 	padding: 15px;
 	text-align: left;
-	font-size: 18px;
-	color: #333333;
 	background-color: #fff;
 	border: none;
 	cursor: pointer;
@@ -721,6 +734,7 @@ span {
 }
 
 .faq-answer {
+	text-align: left;
 	max-height: 0;
 	overflow: hidden;
 	transition: max-height 0.3s ease;
@@ -728,18 +742,54 @@ span {
 }
 
 .faq-answer p {
-	margin: 15px 0;
-	color: #666666;
+	text-align: left;
+	padding: 10px 0;
+	color: rgb(33, 37, 41);
+	font-size: 16px;
+	line-height: 24px;
+	font-weight: 400;
 }
-
+.faq-title {
+	color: rgb(56, 69, 93);
+	font-size: 26px;
+	font-weight: 700;
+	line-height: 39px;
+}
 .icon {
 	content: '+';
 	background: transparent;
 	color: #ff822b;
 	font-size: 25px;
 	font-weight: 500;
-
 	text-align: center;
+}
+.text-faq {
+	margin-bottom: 35px;
+	color: rgb(56, 69, 93);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 27px;
+}
+/* sss mobile */
+@media (max-width: 768px) {
+	.faq-grid {
+		grid-template-columns: 1fr;
+	}
+	.faq-item {
+		width: 100%;
+	}
+	.faq-question {
+		font-size: 16px;
+	}
+	.faq-title {
+		font-size: 24px;
+	}
+	.faq-answer p {
+		font-size: 14px;
+	}
+	.text-faq {
+		font-size: 16px;
+	}
 }
 
 /* container text */
