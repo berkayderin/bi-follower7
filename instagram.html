@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>İnstagram | Follower7</title>
+		<link rel="stylesheet" href="./assets/css/dashboard.css" />
+		<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+	</head>
+	<body>
+		<!--############ header -->
+		<div class="container">
+			<header class="header">
+				<div class="header-toggle" id="header-toggle">
+					<i class="ri-menu-2-fill"></i>
+				</div>
+				<div class="header-logo">
+					<a href="index.html">
+						<img src="./assets/img/logo.svg" alt="Follower7" />
+					</a>
+				</div>
+
+				<div class="overlay" id="overlay"></div>
+				<nav class="header-nav" id="header-nav">
+					<!--mobile logo -->
+					<div class="header-logo-mobile">
+						<img src="./assets/img/logo.svg" alt="Follower7" />
+						<i class="ri-close-fill"></i>
+					</div>
+					<!-- mobile search -->
+					<div class="header-search-mobile">
+						<div class="header-search-mobile-input">
+							<p>Sipariş durumunu kontrol et</p>
+						</div>
+						<div class="header-search-mobile-icon">
+							<input type="text" placeholder="1234567891" />
+							<i class="ri-search-line"></i>
+						</div>
+					</div>
+					<ul>
+						<li class="dropdown">
+							<a href="#">SOSYAL MEDYA HİZMETLERİ <i class="ri-arrow-down-s-line"></i></a>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">
+										<i class="ri-instagram-line badge-instagram"></i>
+										<span>INSTAGRAM</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="ri-tiktok-fill badge-tiktok"></i>
+										<span>TIKTOK</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"
+										><i class="ri-facebook-fill badge-facebook"></i>
+										<span>FACEBOOK</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"
+										><i class="ri-twitter-x-fill badge-twitter"></i>
+										<span>TWITTER</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"
+										><i class="ri-youtube-fill badge-youtube"></i>
+										<span>YOUTUBE</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"
+										><i class="ri-threads-fill badge-threads"></i>
+										<span>THREADS</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"><i class="ri-twitch-fill badge-twitch"></i><span>TWİTCH</span> </a>
+								</li>
+								<li>
+									<a href="#"
+										><i class="ri-google-fill badge-google"></i>
+										<span>GOOGLE</span>
+									</a>
+								</li>
+								<li>
+									<a href="#"><i class="ri-discord-fill badge-discord"></i><span>DİSCORD</span> </a>
+								</li>
+								<li>
+									<a href="#"><i class="ri-linkedin-fill badge-linkedin"></i><span>LİNKEDİN</span> </a>
+								</li>
+								<li>
+									<a href="#"><i class="ri-telegram-fill badge-telegram"></i><span>TELEGRAM</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="ri-spotify-fill badge-spotify"></i><span>SPOTİFY</span> </a>
+								</li>
+								<li>
+									<a href="#"><i class="ri-snapchat-fill badge-snapchat"></i><span>SNAPCHAT</span></a>
+								</li>
+								<li>
+									<a href="#"><i class="ri-kick-fill badge-kick"></i><span>KİCK</span> </a>
+								</li>
+							</ul>
+						</li>
+						<li><a class="header-menu" href="hakkimizda.html">BİZE ULAŞIN</a></li>
+						<li><a class="header-menu" href="iletisim.html">BLOG</a></li>
+						<li>
+							<div class="btn-rank">
+								<img src="./assets/img/icons/ico_cup.png" alt="cup" />
+								<div class="btn-rank-text">
+									<p>Rank:</p>
+									<span>#1</span>
+								</div>
+							</div>
+						</li>
+						<li>
+							<button class="btn-orange-settings btn-orange-settings-mobile">
+								<i class="ri-settings-4-fill"></i>
+								<div>Sertaç Özgüngör</div>
+								<!-- açılır menü -->
+								<ul class="settings-menu" style="display: none">
+									<li>
+										<span class="settings-menu-user">
+											<div class="settings-menu-wallet">
+												<i class="ri-wallet-3-fill settings-menu-icon"></i>
+												<div class="settings-menu-text">
+													<p>Bakiye:</p>
+													<span>953,00€</span>
+												</div>
+											</div>
+
+											<div class="settings-menu-upload">
+												<a href="https://follower7.de/bakiye-yukle" target="_blank"
+													><i class="ri-chat-upload-fill settings-upload"></i>
+													<p class="settings-menu-p">Bakiye Yükle</p>
+												</a>
+											</div>
+										</span>
+									</li>
+									<li>
+										<a href="./modals.html">
+											<i class="ri-settings-4-fill"></i>
+											Hesabım
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="ri-shopping-basket-fill"></i>
+											Siparişlerim
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="ri-wallet-3-fill"></i>
+											Bakiye Geçmişi
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="ri-coupon-2-fill"></i>
+											Kuponlar
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="ri-discount-percent-fill"></i>
+											Satış Ortaklığı
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="ri-customer-service-2-fill"></i>
+											Destek Talebi
+										</a>
+									</li>
+									<li>
+										<a href="#" style="color: #fc132b">
+											<i class="ri-logout-box-fill" style="color: #fc132b"></i>
+											Çıkış Yap
+										</a>
+									</li>
+								</ul>
+								<!-- Menu container ends here -->
+							</button>
+						</li>
+						<li>
+							<button class="btn-green-basket btn-green-basket-mobile">
+								<a href="#">
+									<i class="ri-shopping-basket-fill"></i>
+								</a>
+							</button>
+						</li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+
+		<!--############ info -->
+		<div class="container-info">
+			<div class="info">
+				<!-- info-left -->
+				<div class="info-left">
+					<div class="info-user">SÖ</div>
+					<div class="info-text">
+						<h1>Hoş Geldin,</h1>
+						<p>Sertaç Özgüngör</p>
+					</div>
+				</div>
+				<!-- info-right -->
+				<div class="info-right">
+					<div class="info-right-wallet">
+						<i class="ri-wallet-3-fill"></i>
+						<div class="info-right-text">
+							<p>Bakiye:</p>
+							<span>953,00€</span>
+						</div>
+					</div>
+					<button class="btn-green-upload">
+						<a href="#"><i class="ri-chat-upload-fill"></i> <span>Bakiye Yükle</span></a>
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<!-- ############ tabs menu -->
+		<div class="tabs-menu">
+			<a href="#" class="tabs-menu-item-link"><i class="ri-settings-4-fill"></i>Hesabım</a>
+			<a href="#" class="tabs-menu-item-link"><i class="ri-shopping-basket-fill"></i>Siparişlerim</a>
+			<a href="#" class="tabs-menu-item-link"><i class="ri-wallet-3-fill"></i>Bakiye Geçmişi</a>
+			<a href="#" class="tabs-menu-item-link"><i class="ri-coupon-2-fill"></i>Kuponlar</a>
+			<a href="#" class="tabs-menu-item-link"><i class="ri-customer-service-2-fill"></i>Destek Talebi</a>
+			<a href="#" class="tabs-menu-item-link"><i class="ri-discount-percent-fill"></i>Satış Ortaklığı</a>
+			<a href="#" class="tabs-menu-item-link"><i class="ri-heart-fill"></i>Favori Servislerim</a>
+		</div>
+
+		<div class="instagram-top-title">
+			<i class="ri-instagram-line"></i>
+			<p>İnstagram Takipçi Satın Al</p>
+		</div>
+
+		<div class="instagram-cards-container">
+			<!--############ instagram cards row -->
+			<div class="instagram-cards-row">
+				<!-- Instagram Kartı -->
+				<div class="card instagram-card">
+					<div class="card-header">
+						<div class="card-icon">
+							<i class="ri-instagram-fill"></i>
+							<i class="ri-heart-2-line heart-icon"></i>
+						</div>
+						<span class="card-title">
+							<div class="card-title-text">1.000 İnstagram Takipçi</div>
+						</span>
+					</div>
+					<ul class="card-features">
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Yüksek Kalite Takipçi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							0-5 Dakika Teslimat Süresi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Hızlı Teslimat
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							🎁 +100 Beğeni Hediye
+						</li>
+					</ul>
+					<div class="card-footer">
+						<div class="price-info">
+							<div class="old-price">5,85&nbsp;€</div>
+							<div class="current-price">5,32&nbsp;€</div>
+						</div>
+						<a href="#">
+							<button class="purchase-button">
+								<i class="ri-shopping-basket-2-line"></i>
+								SATIN AL
+							</button>
+						</a>
+					</div>
+				</div>
+				<!-- Instagram Kartı -->
+				<div class="card instagram-card">
+					<div class="card-header">
+						<div class="card-icon">
+							<i class="ri-instagram-fill"></i>
+							<i class="ri-heart-2-line heart-icon"></i>
+						</div>
+						<span class="card-title">
+							<div class="card-title-text">2.500 İnstagram Takipçi</div>
+						</span>
+					</div>
+					<ul class="card-features">
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Yüksek Kalite Takipçi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							0-5 Dakika Teslimat Süresi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Hızlı Teslimat
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							🎁 +250 Beğeni Hediye
+						</li>
+					</ul>
+					<div class="card-footer">
+						<div class="price-info">
+							<div class="old-price">14,62&nbsp;€</div>
+							<div class="current-price">9,36&nbsp;€</div>
+						</div>
+						<a href="#">
+							<button class="purchase-button">
+								<i class="ri-shopping-basket-2-line"></i>
+								SATIN AL
+							</button>
+						</a>
+					</div>
+				</div>
+				<!-- Instagram Kartı -->
+				<div class="card instagram-card">
+					<div class="card-header">
+						<div class="card-icon">
+							<i class="ri-instagram-fill"></i>
+							<i class="ri-heart-2-line heart-icon"></i>
+						</div>
+						<span class="card-title">
+							<div class="card-title-text">5.000 İnstagram Takipçi</div>
+						</span>
+					</div>
+					<ul class="card-features">
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Yüksek Kalite Takipçi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							0-5 Dakika Teslimat Süresi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Hızlı Teslimat
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							🎁 +500 Beğeni Hediye
+						</li>
+					</ul>
+					<div class="card-footer">
+						<div class="price-info">
+							<div class="old-price">29,25&nbsp;€</div>
+							<div class="current-price">17,84&nbsp;€</div>
+						</div>
+						<a href="#">
+							<button class="purchase-button">
+								<i class="ri-shopping-basket-2-line"></i>
+								SATIN AL
+							</button>
+						</a>
+					</div>
+				</div>
+				<!-- Instagram Kartı -->
+				<div class="card instagram-card">
+					<div class="card-header">
+						<div class="card-icon">
+							<i class="ri-instagram-fill"></i>
+							<i class="ri-heart-2-line heart-icon"></i>
+						</div>
+						<span class="card-title">
+							<div class="card-title-text">10.000 İnstagram Takipçi</div>
+						</span>
+					</div>
+					<ul class="card-features">
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Yüksek Kalite Takipçi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							0-5 Dakika Teslimat Süresi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Hızlı Teslimat
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							🎁 +1.000 Beğeni Hediye
+						</li>
+					</ul>
+					<div class="card-footer">
+						<div class="price-info">
+							<div class="old-price">58,50&nbsp;€</div>
+							<div class="current-price">32,76&nbsp;€</div>
+						</div>
+						<a href="#">
+							<button class="purchase-button">
+								<i class="ri-shopping-basket-2-line"></i>
+								SATIN AL
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+			<!--############ instagram cards row 2 -->
+			<div class="instagram-cards-row">
+				<!-- Instagram Kartı -->
+				<div class="card instagram-card">
+					<div class="card-header">
+						<div class="card-icon">
+							<i class="ri-instagram-fill"></i>
+							<i class="ri-heart-2-line heart-icon"></i>
+						</div>
+						<span class="card-title">
+							<div class="card-title-text">25.000 İnstagram Takipçi</div>
+						</span>
+					</div>
+					<ul class="card-features">
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Yüksek Kalite Takipçi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							0-5 Dakika Teslimat Süresi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Hızlı Teslimat
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							🎁 +2.500 Beğeni Hediye
+						</li>
+					</ul>
+					<div class="card-footer">
+						<div class="price-info">
+							<div class="old-price">146,25&nbsp;€</div>
+							<div class="current-price">73,12&nbsp;€</div>
+						</div>
+						<a href="#">
+							<button class="purchase-button">
+								<i class="ri-shopping-basket-2-line"></i>
+								SATIN AL
+							</button>
+						</a>
+					</div>
+				</div>
+				<!-- Instagram Kartı -->
+				<div class="card instagram-card">
+					<div class="card-header">
+						<div class="card-icon">
+							<i class="ri-instagram-fill"></i>
+							<i class="ri-heart-2-line heart-icon"></i>
+						</div>
+						<span class="card-title">
+							<div class="card-title-text">50.000 İnstagram Takipçi</div>
+						</span>
+					</div>
+					<ul class="card-features">
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Yüksek Kalite Takipçi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							0-5 Dakika Teslimat Süresi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Hızlı Teslimat
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							🎁 +5.000 Beğeni Hediye
+						</li>
+					</ul>
+					<div class="card-footer">
+						<div class="price-info">
+							<div class="old-price">292,50&nbsp;€</div>
+							<div class="current-price">128,70&nbsp;€</div>
+						</div>
+						<a href="#">
+							<button class="purchase-button">
+								<i class="ri-shopping-basket-2-line"></i>
+								SATIN AL
+							</button>
+						</a>
+					</div>
+				</div>
+				<!-- Instagram Kartı -->
+				<div class="card instagram-card">
+					<div class="card-header">
+						<div class="card-icon">
+							<i class="ri-instagram-fill"></i>
+							<i class="ri-heart-2-line heart-icon"></i>
+						</div>
+						<span class="card-title">
+							<div class="card-title-text">100.000 İnstagram Takipçi</div>
+						</span>
+					</div>
+					<ul class="card-features">
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Yüksek Kalite Takipçi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							0-5 Dakika Teslimat Süresi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Hızlı Teslimat
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							🎁 +10.000 Beğeni Hediye
+						</li>
+					</ul>
+					<div class="card-footer">
+						<div class="price-info">
+							<div class="old-price">585,00&nbsp;€</div>
+							<div class="current-price">222,30&nbsp;€</div>
+						</div>
+						<a href="#">
+							<button class="purchase-button">
+								<i class="ri-shopping-basket-2-line"></i>
+								SATIN AL
+							</button>
+						</a>
+					</div>
+				</div>
+				<!-- Instagram Kartı -->
+				<div class="card instagram-card">
+					<div class="card-header">
+						<div class="card-icon">
+							<i class="ri-instagram-fill"></i>
+							<i class="ri-heart-2-line heart-icon"></i>
+						</div>
+						<span class="card-title">
+							<div class="card-title-text">250.000 İnstagram Takipçi</div>
+						</span>
+					</div>
+					<ul class="card-features">
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Yüksek Kalite Takipçi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							0-5 Dakika Teslimat Süresi
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							Hızlı Teslimat
+						</li>
+						<li class="card-feature-item">
+							<span class="feature-icon">
+								<i class="ri-arrow-right-s-line"></i>
+							</span>
+							🎁 +25.000 Beğeni Hediye
+						</li>
+					</ul>
+					<div class="card-footer">
+						<div class="price-info">
+							<div class="old-price">1.462,50&nbsp;€</div>
+							<div class="current-price">438,75&nbsp;€</div>
+						</div>
+						<a href="#">
+							<button class="purchase-button">
+								<i class="ri-shopping-basket-2-line"></i>
+								SATIN AL
+							</button>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--############ footer -->
+		<div class="container-footer">
+			<footer>
+				<!-- footer-left -->
+				<div class="footer-left">
+					<div class="footer-left-top">
+						<img src="./assets/img/logo.svg" alt="Follower7" />
+						<div class="footer-left-top-text">
+							<button class="btn-black">
+								<a href="#">
+									<i class="ri-home-smile-2-line"></i>
+									<span class="button-text">HAKKIMIZDA</span>
+								</a>
+							</button>
+							<button class="btn-black">
+								<a href="#">
+									<i class="ri-history-line"></i>
+									<span class="button-text">SİPARİŞ DURUMU</span>
+								</a>
+							</button>
+							<button class="btn-black">
+								<a href="#">
+									<i class="ri-customer-service-2-line"></i>
+									<span class="button-text">TEMAS ETMEK</span>
+								</a>
+							</button>
+						</div>
+					</div>
+
+					<div class="footer-left-bottom">
+						<div>
+							<h5>
+								<span class="footer-line"></span>
+								hizmetlerimiz
+							</h5>
+							<div class="footer-left-bottom-links">
+								<ul>
+									<li><a href="#">Instagram hizmeti</a></li>
+									<li><a href="#">Facebook hizmeti</a></li>
+									<li><a href="#">YouTube hizmeti</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">Tiktok hizmeti</a></li>
+									<li><a href="#">Twitter hizmeti</a></li>
+									<li><a href="#">Konu hizmeti</a></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<h5><span class="footer-line"></span>Takipçi satın al</h5>
+							<div>
+								<ul class="footer-left-bottom-links-2">
+									<li><a href="#">Instagram</a></li>
+									<li><a href="#">Tiktok takipçileri satın al</a></li>
+								</ul>
+								<ul class="footer-left-bottom-links-2">
+									<li><a href="#">Takipçi satın al</a></li>
+								</ul>
+							</div>
+						</div>
+						<div>
+							<h5><span class="footer-line"></span>İzlemek</h5>
+							<div class="footer-left-bottom-links">
+								<ul>
+									<li><a href="#">GDPR</a></li>
+									<li><a href="#">Kurabiye</a></li>
+								</ul>
+								<ul>
+									<li><a href="#">İade politikası</a></li>
+									<li><a href="#">Temas etmek</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- footer-right -->
+				<div class="footerRight">
+					<div class="footer-right">
+						<div class="footer-right-top">
+							<p>Bizi sosyal medyada takip edin.</p>
+							<div class="footer-right-top-social">
+								<a href="https://www.facebook.com" class="btn-social" target="_blank">
+									<i class="ri-facebook-box-fill"></i>
+								</a>
+								<a href="https://www.linkedin.com" class="btn-social" target="_blank">
+									<i class="ri-linkedin-fill"></i>
+								</a>
+								<a href="https://www.instagram.com" class="btn-social" target="_blank">
+									<i class="ri-instagram-line"></i>
+								</a>
+								<a href="https://www.twitter.com" class="btn-social" target="_blank">
+									<i class="ri-twitter-fill"></i>
+								</a>
+							</div>
+						</div>
+						<div class="footer-right-bottom">
+							<div class="footer-right-bottom-title">
+								<a href="#" class="btn-social" target="_blank">
+									<i class="ri-customer-service-2-fill"></i>
+								</a>
+								<p>+49 0 405611 7470</p>
+							</div>
+							<div class="footer-right-bottom-title">
+								<a href="#" class="btn-social" target="_blank">
+									<i class="ri-mail-open-line"></i>
+								</a>
+								<p>info@follower7.de</p>
+							</div>
+							<div class="footer-right-bottom-title">
+								<a href="#" class="btn-social" target="_blank">
+									<i class="ri-map-pin-2-line"></i>
+								</a>
+								<div class="footer-right-bottom-title-text">
+									<p>16 Bahnhofstrasse. 13159</p>
+									<p>Pankow/Berlin</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<!--############ footer-bottom -->
+		<div class="footer-bottom">
+			<p>© 2024 Follower7. Tüm hakları saklıdır.</p>
+			<div class="footer-bottom-links">
+				<a href="#">Gizlilik Politikası</a>
+				<a href="#">İade politikası</a>
+				<a href="#">Temas etmek</a>
+			</div>
+		</div>
+
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>

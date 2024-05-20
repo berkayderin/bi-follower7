@@ -105,3 +105,17 @@ function copyToClipboard() {
 	copyText.setSelectionRange(0, 99999)
 	navigator.clipboard.writeText(copyText.value)
 }
+
+// Heart icon toggle for each card
+const heartIcons = document.querySelectorAll('.heart-icon')
+heartIcons.forEach((icon) => {
+	icon.addEventListener('click', function () {
+		if (this.classList.contains('ri-heart-2-line')) {
+			this.classList.remove('ri-heart-2-line')
+			this.classList.add('ri-heart-2-fill')
+		} else {
+			this.classList.remove('ri-heart-2-fill')
+			this.classList.add('ri-heart-2-line')
+		}
+	})
+})

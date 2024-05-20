@@ -4005,3 +4005,205 @@ footer {
 		gap: 50px;
 	}
 }
+
+/* ############ instagram */
+.card {
+	background-color: #fff;
+	border-radius: 10px;
+	border-top: 4px solid;
+	position: relative;
+	height: 465px;
+	width: 306px;
+}
+
+.instagram-card {
+	border-color: #e1306c;
+}
+
+.card-header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 20px;
+	position: relative;
+}
+
+.card-icon {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0 15px;
+}
+
+.card-icon i:first-child {
+	margin: 0 auto;
+}
+
+.card-icon i.heart-icon {
+	position: absolute;
+	right: 15px;
+	cursor: pointer;
+}
+
+.card-header i {
+	font-size: 40px;
+	color: #e1306c;
+}
+
+.card-title {
+	display: flex;
+	align-items: center;
+}
+
+.card-title-text {
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.card-features {
+	padding: 15px;
+}
+
+.card-feature-item {
+	padding: 10px;
+	border-radius: 30px;
+	background-color: #f1f2f7;
+	display: flex;
+	align-items: center;
+	margin-bottom: 10px;
+	font-size: 15px;
+	font-weight: 400;
+	color: #1a1d23;
+}
+
+.feature-icon {
+	border-radius: 100%;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 14px;
+	color: #fff;
+	margin-right: 15px;
+	padding: 5px;
+}
+
+.instagram-card .feature-icon {
+	background-color: #e1306c;
+}
+
+.card-footer {
+	padding: 15px;
+	border-top: 1px solid #e0e2eb;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.price-info {
+	text-align: left;
+}
+
+.old-price {
+	font-size: 16px;
+	font-weight: 600;
+	color: #bcbfcf;
+	text-decoration: line-through;
+	margin-bottom: 0;
+}
+
+.current-price {
+	font-size: 22px;
+	font-weight: 600;
+	color: #1a1d23;
+	margin-bottom: 0;
+}
+
+.purchase-button {
+	border-radius: 5px;
+	border: none;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+	font-weight: 600;
+	color: #fff;
+	padding: 10px;
+	transition: all 0.6s;
+	cursor: pointer;
+}
+
+.instagram-card .purchase-button {
+	background-color: #e1306c;
+}
+
+.instagram-card .purchase-button:hover {
+	background-color: #ff3366;
+}
+
+.purchase-button i {
+	font-size: 18px;
+	font-weight: 400;
+	margin-right: 7px;
+}
+
+.instagram-cards-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 20px;
+
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	width: 1330px;
+	margin: 0 auto;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.instagram-cards-row {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+
+	column-gap: 24px;
+}
+
+.instagram-top-title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	row-gap: 10px;
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+.instagram-top-title i {
+	font-size: 40px;
+	color: #e1306c;
+}
+
+.instagram-top-title p {
+	font-size: 24px;
+	font-weight: 600;
+	color: #1a1d23;
+}
+
+/* ############ instagram mobile */
+@media (max-width: 768px) {
+	.instagram-cards-container {
+		width: 90%;
+		height: 100%;
+	}
+
+	.instagram-cards-row {
+		flex-direction: column;
+	}
+}
