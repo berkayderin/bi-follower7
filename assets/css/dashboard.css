@@ -3124,3 +3124,334 @@ footer {
 		font-size: 1.5rem;
 	}
 }
+
+/* ############ satış ortaklığı (market) */
+.market-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+
+	background-color: #ffffff;
+	width: 1300px;
+	height: 416px;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.market-container-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	column-gap: 10px;
+	width: 100%;
+	padding: 20px 14px;
+	border-bottom: 1px solid #f78129;
+}
+
+.market-container-title h2 {
+	font-size: 18px;
+	font-weight: 600;
+	color: #f78129;
+}
+
+.market-container-title-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fde6d4;
+	width: 50px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+.market-container-title-icon i {
+	font-size: 20px;
+	color: #fc750e;
+}
+
+.market-container-content {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	row-gap: 20px;
+	padding: 30px 30px;
+}
+
+.market-container-content-link {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	width: 100%;
+	height: 100px;
+	background-color: #46d3a8;
+	border-radius: 10px;
+}
+
+.market-container-content-link-icon {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	column-gap: 10px;
+	width: 100%;
+	padding: 20px 14px;
+}
+
+.market-container-content-link-icon i {
+	font-size: 20px;
+	color: #46d3a8;
+	background-color: #ffffff;
+	padding: 12px;
+	border-radius: 10px;
+}
+
+.market-container-content-link-icon p {
+	font-size: 18px;
+	font-weight: 600;
+	color: #ffffff;
+}
+
+.market-container-content-link-input {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	column-gap: 10px;
+	width: 100%;
+	padding: 20px 14px;
+
+	position: relative;
+}
+
+.market-container-content-link-input input {
+	width: 636px;
+	height: 62px;
+	border: none;
+	border-radius: 10px;
+	background-color: #ffffff;
+	padding: 0 50px 0 20px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #707070;
+}
+
+.btn-green-copy-2 {
+	width: 156px;
+	height: 46px;
+	border: none;
+	border-radius: 10px;
+	background-color: #46d3a92c;
+	color: #46d3a8;
+	font-weight: 500;
+	cursor: pointer;
+	font-size: 18px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	position: absolute;
+	right: 30px;
+}
+
+.market-carts {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+}
+
+.market-cart {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+	column-gap: 10px;
+	width: 285px;
+	height: 108px;
+	padding: 20px 14px;
+
+	background-color: #e9f3f7;
+	border-radius: 10px;
+}
+
+.market-cart i {
+	font-size: 32px;
+	color: #46d3a8;
+	background-color: #ffffff;
+	padding: 14px;
+	border-radius: 10px;
+}
+
+.market-cart span {
+	font-size: 34px;
+	font-weight: 600;
+	color: #46d3a8;
+}
+.market-cart-text p {
+	font-size: 19px;
+	font-weight: 500;
+	color: #707070;
+}
+
+/* ############ satış ortaklığı (market) mobile */
+@media (max-width: 768px) {
+	.market-container {
+		width: 90%;
+		height: 100%;
+	}
+
+	.market-container-title {
+		padding: 20px 10px;
+	}
+
+	.market-container-title h2 {
+		font-size: 16px;
+	}
+
+	.market-container-title-icon {
+		width: 40px;
+		height: 40px;
+	}
+
+	.market-container-title-icon i {
+		font-size: 18px;
+	}
+
+	.market-container-content {
+		padding: 20px 10px;
+	}
+
+	.market-container-content-link {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 0;
+		column-gap: 0;
+		height: 100%;
+		padding: 20px 10px;
+	}
+
+	.market-container-content-link-icon {
+		padding: 20px 10px;
+	}
+
+	.market-container-content-link-icon i {
+		font-size: 18px;
+	}
+
+	.market-container-content-link-icon p {
+		font-size: 16px;
+	}
+
+	.market-container-content-link-input {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 20px;
+		padding: 20px 10px;
+	}
+
+	.market-container-content-link-input input {
+		width: 100%;
+		height: 50px;
+		font-size: 14px;
+	}
+	.market-container-content-link-input input::placeholder {
+		font-size: 10px;
+	}
+
+	.btn-green-copy-2 {
+		width: 60px;
+		height: 40px;
+		font-size: 12px;
+	}
+
+	.market-carts {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		row-gap: 20px;
+	}
+
+	.market-cart {
+		width: 90%;
+		height: 100px;
+		padding: 20px 10px;
+	}
+
+	.market-cart i {
+		font-size: 24px;
+		padding: 10px;
+	}
+
+	.market-cart span {
+		font-size: 24px;
+	}
+
+	.market-cart-text p {
+		font-size: 14px;
+	}
+}
+
+/* ############ yönlendirdikleriniz */
+.connect {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+
+	background-color: #ffffff;
+	width: 1300px;
+	height: 400px;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.connect-content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+
+	width: 100%;
+	height: 100%;
+	row-gap: 20px;
+}
+
+.left-align {
+	text-align: left;
+}
+
+.right-align {
+	text-align: right;
+}
+
+/* ############ yönlendirdikleriniz mobile */
+@media (max-width: 768px) {
+	.connect {
+		width: 90%;
+		height: 100%;
+	}
+
+	.connect-content {
+		padding: 20px 10px;
+	}
+}
