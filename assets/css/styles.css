@@ -154,37 +154,107 @@ header {
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	z-index: 1000;
-	width: 600px;
+	width: 750px;
 	padding: 10px;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	column-gap: 10px;
 }
 
 .header-nav .dropdown-menu li {
-	flex: 1 1 25%;
+	width: calc(25% - 10px);
+	max-width: 200px;
 	list-style: none;
 	padding: 5px;
 	box-sizing: border-box;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .header-nav .dropdown-menu li a {
-	display: block;
-	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+	column-gap: 10px;
+
 	color: #333;
 	text-decoration: none;
-	background-color: #f9f9f9;
 	border-radius: 5px;
-	text-align: center;
 	transition: background-color 0.3s ease;
+	width: 100%;
 }
 
-.header-nav .dropdown-menu li a:hover {
-	background-color: #f78129;
-	color: #fff;
+.badge-instagram {
+	background-color: #e1306c;
+}
+
+.badge-tiktok {
+	background-color: #000;
+}
+
+.badge-facebook {
+	background-color: #1873eb;
+}
+
+.badge-twitter {
+	background-color: #000;
+}
+
+.badge-youtube {
+	background-color: #ff0000;
+}
+
+.badge-threads {
+	background-color: #333;
+}
+
+.badge-twitch {
+	background-color: #6441a5;
+}
+
+.badge-google {
+	background-color: #ff822a;
+}
+
+.badge-discord {
+	background-color: #5865f2;
+}
+
+.badge-linkedin {
+	background-color: #0077b5;
+}
+
+.badge-telegram {
+	background-color: #0088cc;
+}
+
+.badge-spotify {
+	background-color: #1db954;
+}
+
+.badge-snapchat {
+	background-color: #bfad14;
+}
+
+.badge-kick {
+	background-color: #00b662;
 }
 
 .header-nav .dropdown:hover .dropdown-menu {
 	display: flex;
+}
+
+.dropdown-menu li a i {
+	font-size: 1.3rem;
+
+	color: #fff;
+	padding: 10px;
+	border-radius: 2px;
+	margin-bottom: 5px;
+	font-weight: 300;
 }
 
 .overlay {
@@ -205,6 +275,10 @@ header {
 .dropdown a {
 	font-size: 18px;
 	font-weight: 600;
+}
+
+.header-logo-mobile {
+	display: none;
 }
 
 /* ############ header mobile */
@@ -230,12 +304,12 @@ header {
 	}
 
 	.header {
-		justify-content: center; /* Center everything in the header */
+		justify-content: center;
 	}
 
 	.header-toggle {
 		position: absolute;
-		left: 20px; /* Adjust as necessary for your design */
+		left: 20px;
 		display: block;
 	}
 	.header-logo a img {
@@ -251,7 +325,13 @@ header {
 
 	.btn-orange-settings {
 		position: absolute;
-		right: 20px; /* Adjust as necessary for your design */
+		right: 20px;
+	}
+
+	.header-toggle {
+		position: absolute;
+		left: 20px;
+		display: block;
 	}
 
 	.header-toggle i {
@@ -266,7 +346,7 @@ header {
 		left: 0;
 		width: 290px;
 		height: 100%;
-		background-color: #fff;
+		background-color: #f7f7ff;
 
 		flex-direction: column;
 		align-items: flex-start;
@@ -307,13 +387,48 @@ header {
 
 	.header-nav .dropdown-menu li {
 		width: 100%;
+		padding: 0px;
 	}
 
 	.header-nav .dropdown-menu li a {
-		padding: 2px;
+		padding: 0px;
 		font-size: 12px;
 		text-align: start;
 		background-color: #fff;
+	}
+
+	.header-logo-mobile {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		width: 100%;
+		height: 80px;
+
+		background-color: #fff;
+		padding: 0 10px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+
+	.header-logo-mobile img {
+		width: 140px;
+		height: 35px;
+	}
+
+	.header-logo-mobile i {
+		font-size: 1.8rem;
+		color: #f78129;
+	}
+
+	.dropdown-menu li a i {
+		font-size: 0.8rem;
+		color: #fff;
+		padding: 6px;
+		border-radius: 2px;
+		margin-bottom: 5px;
+		font-weight: 300;
 	}
 }
 
@@ -1033,7 +1148,7 @@ footer {
 }
 
 .button-text {
-	margin-left: 5px; /* Adjust spacing between icon and text */
+	margin-left: 5px;
 	font-size: 14px;
 	font-weight: 500;
 }
@@ -1051,6 +1166,7 @@ footer {
 		justify-content: center;
 
 		width: 100%;
+		height: 70px;
 	}
 
 	.btn-black a {

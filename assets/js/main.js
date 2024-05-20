@@ -85,3 +85,15 @@ function activateToggle(element, isOn) {
 		toggleOff.textContent = 'Kapalı'
 	}
 }
+
+// mobile toggle switch click close
+document.addEventListener('DOMContentLoaded', function () {
+	const headerClose = document.querySelector('.header-logo-mobile .ri-close-fill')
+	const nav = document.getElementById('header-nav')
+	const overlay = document.getElementById('overlay')
+
+	headerClose.addEventListener('click', function () {
+		nav.classList.remove('active')
+		overlay.style.display = 'none'
+	})
+})

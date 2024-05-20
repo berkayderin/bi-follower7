@@ -74,9 +74,9 @@ header {
 	height: 80px;
 	background-color: #edf0f5;
 
-	max-width: 1550px; /* Maksimum genişliği sabitle */
-	margin: 0 auto; /* Ortalamak için */
-	width: 100%; /* Mobilde tam genişlik */
+	max-width: 1550px;
+	margin: 0 auto;
+	width: 100%;
 }
 
 .header-nav {
@@ -153,7 +153,7 @@ header {
 
 /* açılır menü */
 .btn-orange-settings ul.settings-menu {
-	display: none; /* Hidden by default */
+	display: none;
 	position: absolute;
 	top: 60px;
 	left: 0;
@@ -283,6 +283,7 @@ header {
 
 .btn-green-basket i {
 	font-size: 1.2rem;
+	font-weight: 300;
 }
 
 .btn-green-basket:hover {
@@ -342,33 +343,102 @@ header {
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 	border-radius: 4px;
 	z-index: 1000;
-	width: 600px;
+	width: 960px;
 	padding: 10px;
 	flex-wrap: wrap;
-	justify-content: space-between;
+	justify-content: flex-start;
 }
 
 .header-nav .dropdown-menu li {
-	flex: 1 1 25%;
+	width: calc(25% - 10px);
+	max-width: 200px;
 	list-style: none;
 	padding: 5px;
 	box-sizing: border-box;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .header-nav .dropdown-menu li a {
-	display: block;
-	padding: 10px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: start;
+	column-gap: 10px;
+
 	color: #333;
 	text-decoration: none;
-	background-color: #f9f9f9;
 	border-radius: 5px;
-	text-align: center;
 	transition: background-color 0.3s ease;
+	width: 100%;
 }
 
-.header-nav .dropdown-menu li a:hover {
-	background-color: #f78129;
+.dropdown-menu li a i {
+	font-size: 1.3rem;
+
 	color: #fff;
+	padding: 10px;
+	border-radius: 2px;
+	margin-bottom: 5px;
+	font-weight: 300;
+}
+
+.badge-instagram {
+	background-color: #e1306c;
+}
+
+.badge-tiktok {
+	background-color: #000;
+}
+
+.badge-facebook {
+	background-color: #1873eb;
+}
+
+.badge-twitter {
+	background-color: #000;
+}
+
+.badge-youtube {
+	background-color: #ff0000;
+}
+
+.badge-threads {
+	background-color: #333;
+}
+
+.badge-twitch {
+	background-color: #6441a5;
+}
+
+.badge-google {
+	background-color: #ff822a;
+}
+
+.badge-discord {
+	background-color: #5865f2;
+}
+
+.badge-linkedin {
+	background-color: #0077b5;
+}
+
+.badge-telegram {
+	background-color: #0088cc;
+}
+
+.badge-spotify {
+	background-color: #1db954;
+}
+
+.badge-snapchat {
+	background-color: #bfad14;
+}
+
+.badge-kick {
+	background-color: #00b662;
 }
 
 .header-nav .dropdown:hover .dropdown-menu {
@@ -408,6 +478,14 @@ header {
 	left: 0;
 }
 
+.header-logo-mobile {
+	display: none;
+}
+
+.header-search-mobile {
+	display: none;
+}
+
 @media (max-width: 768px) {
 	header {
 		flex-direction: row;
@@ -419,7 +497,7 @@ header {
 	}
 
 	.header {
-		justify-content: center; /* Center everything in the header */
+		justify-content: center;
 	}
 
 	.header-logo a img {
@@ -435,12 +513,12 @@ header {
 
 	.btn-orange-settings {
 		position: absolute;
-		right: 20px; /* Adjust as necessary for your design */
+		right: 20px;
 	}
 
 	.header-toggle {
 		position: absolute;
-		left: 20px; /* Adjust as necessary for your design */
+		left: 20px;
 		display: block;
 	}
 
@@ -456,7 +534,7 @@ header {
 		left: 0;
 		width: 290px;
 		height: 100%;
-		background-color: #fff;
+		background-color: #f7f7ff;
 
 		flex-direction: column;
 		align-items: flex-start;
@@ -497,6 +575,7 @@ header {
 
 	.header-nav .dropdown-menu li {
 		width: 100%;
+		padding: 0px;
 	}
 
 	.header-nav .dropdown-menu li a {
@@ -504,6 +583,88 @@ header {
 		font-size: 12px;
 		text-align: start;
 		background-color: #fff;
+	}
+
+	.header-logo-mobile {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		width: 100%;
+		height: 80px;
+
+		background-color: #fff;
+		padding: 0 10px;
+		border-radius: 10px;
+		margin-bottom: 20px;
+	}
+
+	.header-logo-mobile img {
+		width: 140px;
+		height: 35px;
+	}
+
+	.header-logo-mobile i {
+		font-size: 1.8rem;
+		color: #f78129;
+	}
+
+	.btn-green-basket-mobile {
+		display: none;
+	}
+
+	.btn-orange-settings-mobile {
+		display: none;
+	}
+
+	.header-search-mobile {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+
+		margin-bottom: 20px;
+	}
+
+	.header-search-mobile-icon {
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+
+		width: 100%;
+		height: 40px;
+		background-color: #fff;
+		border-radius: 10px;
+	}
+
+	.header-search-mobile-icon input {
+		height: 40px;
+		border: none;
+		border-radius: 10px;
+		background-color: #ffff;
+		padding: 0 20px;
+		font-size: 14px;
+		font-weight: 300;
+		color: #0000006b;
+	}
+
+	.header-search-mobile-icon i {
+		font-size: 1.5rem;
+		color: #f78129;
+	}
+
+	.header-search-mobile-input p {
+		text-align: center;
+		font-size: 14px;
+		font-weight: 500;
+		color: #000;
+		margin-bottom: 10px;
+	}
+
+	.dropdown-menu li a i {
+		padding: 2px;
 	}
 }
 
@@ -633,6 +794,7 @@ header {
 
 .btn-green-upload a i {
 	font-size: 1.2rem;
+	font-weight: 300;
 }
 
 .btn-green-upload a span {
@@ -1138,12 +1300,12 @@ thead {
 }
 
 .toggle-on {
-	background-color: #fff; /* Pasif rengi */
+	background-color: #fff;
 	color: #707070;
 }
 
 .toggle-off {
-	background-color: #d34646; /* Aktif rengi */
+	background-color: #d34646;
 }
 
 /* ############ hesabım: personal-info */
@@ -1978,7 +2140,7 @@ footer {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	text-decoration: none; /* Added to remove underline from links */
+	text-decoration: none;
 }
 
 .btn-black i {
@@ -1986,7 +2148,7 @@ footer {
 }
 
 .button-text {
-	margin-left: 5px; /* Adjust spacing between icon and text */
+	margin-left: 5px;
 	font-size: 14px;
 	font-weight: 500;
 }
@@ -2010,6 +2172,7 @@ footer {
 		justify-content: center;
 
 		width: 100%;
+		height: 70px;
 	}
 
 	.btn-black a {
