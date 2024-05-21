@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const nav = document.getElementById('header-nav')
 	const overlay = document.getElementById('overlay')
 	const closeButton = document.querySelector('.header-logo-mobile .ri-close-fill')
-	const dropdownTrigger = document.querySelector('.dropdown a') // Dropdown'u tetikleyen link
+	const dropdownIcon = document.querySelector('.dropdown a i.ri-arrow-down-s-line') // Doğrudan ikonu seç
 	const dropdownMenu = document.querySelector('.dropdown .dropdown-menu') // Dropdown menüsü
 
 	function closeNav() {
@@ -29,8 +29,8 @@ document.addEventListener('DOMContentLoaded', function () {
 	overlay.addEventListener('click', closeNav)
 	closeButton.addEventListener('click', closeNav)
 
-	// Dropdown Toggle
-	dropdownTrigger.addEventListener('click', function (event) {
+	// Dropdown Toggle with the icon
+	dropdownIcon.addEventListener('click', function (event) {
 		event.preventDefault() // Linkin varsayılan davranışını önle
 		dropdownMenu.classList.toggle('show') // 'show' sınıfını ekleyerek görünür yap veya kaldır
 	})
@@ -38,7 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	// İstenirse dışarıya tıklandığında menüyü kapat
 	document.addEventListener('click', function (event) {
 		if (
-			!dropdownTrigger.contains(event.target) &&
+			!dropdownIcon.contains(event.target) &&
 			!dropdownMenu.contains(event.target) &&
 			dropdownMenu.classList.contains('show')
 		) {
