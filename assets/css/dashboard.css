@@ -474,7 +474,7 @@ header {
 
 #header-nav.active {
 	display: block;
-	z-index: 1000;
+	z-index: 2000;
 	left: 0;
 }
 
@@ -553,11 +553,14 @@ header {
 
 	.header-nav ul {
 		flex-direction: column;
-		row-gap: 20px;
+		row-gap: 12px;
 		width: 100%;
 
 		background-color: #fff;
-		padding: 20px;
+		padding-left: 20px;
+		padding-right: 20px;
+		padding-top: 10px;
+		padding-bottom: 0px;
 		border-radius: 10px;
 	}
 
@@ -695,6 +698,50 @@ header {
 		font-weight: 600;
 		color: #000;
 		margin-bottom: 10px;
+	}
+}
+
+/* ############ sticky footer menü */
+.sticky-footer-menu {
+	display: none;
+}
+
+@media (max-width: 768px) {
+	.sticky-footer-menu {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		position: fixed;
+
+		bottom: 0;
+		width: 100%;
+		background-color: #fff;
+		box-shadow: 0 -8px 16px rgba(0, 0, 0, 0.056);
+		padding: 10px 0;
+		z-index: 1000;
+	}
+
+	.sticky-footer-menu a {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		row-gap: 5px;
+	}
+
+	.sticky-footer-menu a i {
+		font-size: 1.5rem;
+		font-weight: 400;
+	}
+
+	.sticky-footer-menu a span {
+		font-size: 12px;
+		font-weight: 600;
+	}
+
+	.sticky-active-menu {
+		color: #f78129;
 	}
 }
 
