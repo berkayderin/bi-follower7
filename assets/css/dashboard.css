@@ -2099,7 +2099,7 @@ footer {
 /* ############ footer left */
 
 .footer-left {
-	padding-left: 350px;
+	padding-left: 320px;
 	flex: 2;
 	background-color: white;
 }
@@ -2329,11 +2329,19 @@ footer {
 	justify-content: space-around;
 	align-items: center;
 
+	column-gap: 150px;
 	background-color: #191e27;
 	color: #95a0b6;
 	padding: 20px 0;
 	font-weight: 400;
 	font-size: 15px;
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+.container-footer-bottom {
+	background-color: #191e27;
+	box-sizing: border-box;
 }
 
 .footer-bottom-links {

@@ -1313,7 +1313,7 @@ footer {
 /* ############ footer left */
 
 .footer-left {
-	padding-left: 250px;
+	padding-left: 300px;
 	flex: 2;
 	background-color: white;
 }
@@ -1542,12 +1542,20 @@ footer {
 	flex-direction: row;
 	justify-content: space-around;
 	align-items: center;
+	column-gap: 200px;
 
 	background-color: #191e27;
 	color: #95a0b6;
 	padding: 20px 0;
 	font-weight: 400;
 	font-size: 15px;
+	max-width: 2000px;
+	margin: 0 auto;
+}
+
+.container-footer-bottom {
+	background-color: #191e27;
+	box-sizing: border-box;
 }
 
 .footer-bottom-links {
