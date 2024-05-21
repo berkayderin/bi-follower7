@@ -486,6 +486,10 @@ header {
 	display: none;
 }
 
+.dropdown-menu.show {
+	display: flex; /* Menüyü görünür yap */
+}
+
 @media (max-width: 768px) {
 	header {
 		flex-direction: row;
@@ -528,28 +532,33 @@ header {
 	}
 
 	.header-nav {
-		display: none;
 		position: fixed;
 		top: 0;
 		left: 0;
 		width: 290px;
 		height: 100%;
 		background-color: #f7f7ff;
-
 		flex-direction: column;
 		align-items: flex-start;
 		padding: 20px;
 		box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+		transform: translateX(-290px);
+		transition: transform 0.3s ease-in-out;
+		overflow: hidden;
 	}
 
 	.header-nav.active {
-		transform: translateX(0);
+		transform: translateX(0); /* Menü aktif olduğunda ekran içine kaydır */
 	}
 
 	.header-nav ul {
 		flex-direction: column;
 		row-gap: 20px;
 		width: 100%;
+
+		background-color: #fff;
+		padding: 20px;
+		border-radius: 10px;
 	}
 
 	.header-nav ul li {
@@ -558,6 +567,7 @@ header {
 
 	.header-nav ul li a {
 		width: 100%;
+		font-size: 14px;
 	}
 
 	.header-nav .dropdown-menu {
@@ -575,14 +585,14 @@ header {
 
 	.header-nav .dropdown-menu li {
 		width: 100%;
-		padding: 0px;
+		padding: 1px 0;
 	}
 
 	.header-nav .dropdown-menu li a {
-		padding: 2px;
+		padding: 5px 10px;
 		font-size: 12px;
 		text-align: start;
-		background-color: #fff;
+		background-color: #00000005;
 	}
 
 	.header-logo-mobile {
@@ -592,7 +602,7 @@ header {
 		align-items: center;
 
 		width: 100%;
-		height: 80px;
+		height: 70px;
 
 		background-color: #fff;
 		padding: 0 10px;
@@ -607,7 +617,26 @@ header {
 
 	.header-logo-mobile i {
 		font-size: 1.8rem;
+		color: #000;
+		opacity: 0.5;
+	}
+
+	.dropdown-menu li a i {
+		display: none;
+	}
+
+	.dropdown a i {
+		font-size: 1.2rem;
 		color: #f78129;
+	}
+
+	/* Liste öğelerine dot ekle */
+	.dropdown-menu li a::before {
+		content: '•';
+		color: #ccc;
+		margin-right: 5px;
+
+		font-size: 20px;
 	}
 
 	.btn-green-basket-mobile {
@@ -618,13 +647,15 @@ header {
 		display: none;
 	}
 
+	/* Arama butonu */
 	.header-search-mobile {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
-		align-items: start;
+		align-items: center;
 
 		margin-bottom: 20px;
+		margin-top: 40px;
 	}
 
 	.header-search-mobile-icon {
@@ -651,20 +682,19 @@ header {
 	}
 
 	.header-search-mobile-icon i {
-		font-size: 1.5rem;
-		color: #f78129;
+		font-size: 1.1rem;
+		color: #fff;
+		background-color: #f78129;
+		border-radius: 0px 10px 10px 0px;
+		padding: 10px;
 	}
 
 	.header-search-mobile-input p {
 		text-align: center;
 		font-size: 14px;
-		font-weight: 500;
+		font-weight: 600;
 		color: #000;
 		margin-bottom: 10px;
-	}
-
-	.dropdown-menu li a i {
-		padding: 2px;
 	}
 }
 

@@ -3,15 +3,47 @@ document.addEventListener('DOMContentLoaded', function () {
 	const toggle = document.getElementById('header-toggle')
 	const nav = document.getElementById('header-nav')
 	const overlay = document.getElementById('overlay')
+	const closeButton = document.querySelector('.header-logo-mobile .ri-close-fill')
+	const dropdownTrigger = document.querySelector('.dropdown a') // Dropdown'u tetikleyen link
+	const dropdownMenu = document.querySelector('.dropdown .dropdown-menu') // Dropdown menüsü
+
+	function closeNav() {
+		nav.style.transform = 'translateX(-290px)' // Menüyü dışarı kaydır
+		nav.addEventListener('transitionend', function handler() {
+			nav.classList.remove('active') // Animasyon tamamlandığında active sınıfını kaldır
+			nav.removeEventListener('transitionend', handler)
+		})
+		overlay.style.display = 'none'
+	}
 
 	toggle.addEventListener('click', function () {
-		nav.classList.toggle('active')
-		overlay.style.display = nav.classList.contains('active') ? 'block' : 'none'
+		if (nav.classList.contains('active')) {
+			closeNav()
+		} else {
+			nav.style.transform = 'translateX(0)' // Menüyü içeri kaydır
+			nav.classList.add('active')
+			overlay.style.display = 'block'
+		}
 	})
 
-	overlay.addEventListener('click', function () {
-		nav.classList.remove('active')
-		overlay.style.display = 'none'
+	overlay.addEventListener('click', closeNav)
+	closeButton.addEventListener('click', closeNav)
+
+	// Dropdown Toggle
+	dropdownTrigger.addEventListener('click', function (event) {
+		event.preventDefault() // Linkin varsayılan davranışını önle
+		dropdownMenu.classList.toggle('show') // 'show' sınıfını ekleyerek görünür yap veya kaldır
+	})
+
+	// İstenirse dışarıya tıklandığında menüyü kapat
+	document.addEventListener('click', function (event) {
+		if (
+			!dropdownTrigger.contains(event.target) &&
+			!dropdownMenu.contains(event.target) &&
+			dropdownMenu.classList.contains('show')
+		) {
+			dropdownMenu.classList.remove('show')
+		}
 	})
 })
 
@@ -88,13 +120,11 @@ function activateToggle(element, isOn) {
 
 // mobile toggle switch click close
 document.addEventListener('DOMContentLoaded', function () {
-	const headerClose = document.querySelector('.header-logo-mobile .ri-close-fill')
-	const nav = document.getElementById('header-nav')
-	const overlay = document.getElementById('overlay')
-
-	headerClose.addEventListener('click', function () {
-		nav.classList.remove('active')
-		overlay.style.display = 'none'
+	const toggleSwitches = document.querySelectorAll('.toggle-switch')
+	toggleSwitches.forEach((toggleSwitch) => {
+		toggleSwitch.addEventListener('click', function (event) {
+			event.stopPropagation()
+		})
 	})
 })
 
@@ -117,5 +147,39 @@ heartIcons.forEach((icon) => {
 			this.classList.remove('ri-heart-2-fill')
 			this.classList.add('ri-heart-2-line')
 		}
+	})
+})
+
+// FAQ Accordion
+document.addEventListener('DOMContentLoaded', function () {
+	const faqItems = document.querySelectorAll('.faq-item')
+
+	faqItems.forEach((item) => {
+		const question = item.querySelector('.faq-question')
+		const answer = item.querySelector('.faq-answer')
+		const icon = item.querySelector('.icon')
+
+		question.addEventListener('click', () => {
+			const isActive = item.classList.contains('active')
+			faqItems.forEach((otherItem) => {
+				if (otherItem !== item) {
+					otherItem.classList.remove('active')
+					otherItem.querySelector('.faq-answer').style.maxHeight = '0'
+					otherItem.querySelector('.icon').textContent = '+'
+				}
+			})
+
+			if (!isActive) {
+				item.classList.add('active')
+				answer.style.maxHeight = `${answer.scrollHeight}px`
+				icon.textContent = '-'
+				question.style.backgroundColor = ' #dfdbdb87'
+			} else {
+				item.classList.remove('active')
+				answer.style.maxHeight = '0'
+				icon.textContent = '+'
+				question.style.backgroundColor = ' #fff'
+			}
+		})
 	})
 })
