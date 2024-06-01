@@ -940,7 +940,7 @@ header {
 	background-color: #edf0f5;
 	height: 85px;
 	margin-left: auto;
-	padding-right: 120px;
+	padding-right: 1px;
 	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 	overflow: hidden;
 	transition: max-height 0.3s ease;
