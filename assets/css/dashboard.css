@@ -4713,9 +4713,14 @@ footer {
 		row-gap: 20px;
 	}
 
-	.btn-follow,
-	.btn-like {
-		padding: 15px 20px;
+	.btn-like span {
+		font-size: 20px;
+		font-weight: 500;
+	}
+
+	.btn-follow span {
+		font-size: 20px;
+		font-weight: 500;
 	}
 
 	.follow-card {
@@ -4745,8 +4750,17 @@ footer {
 		width: calc(100% - 40px);
 	}
 
+	.follow-card-content-user-input input::placeholder {
+		font-size: 20px;
+		font-weight: 400;
+		color: #191b2a;
+	}
+
 	.btn-send {
-		width: 100%;
+		width: 300px;
+		height: 60px;
+		font-size: 20px;
+		font-weight: 600;
 	}
 
 	.follow-card-text {
@@ -4755,5 +4769,15 @@ footer {
 
 	.follow-card-text-img img {
 		margin-top: 20px;
+	}
+
+	.card-title-ig {
+		font-size: 20px;
+	}
+
+	.follow-card-text-content h6 {
+		font-size: 16px;
+		font-weight: 500;
+		color: #707070;
 	}
 }
