@@ -4379,6 +4379,10 @@ footer {
 	row-gap: 10px;
 }
 
+.gift-card-body-item i {
+	font-size: 20px;
+}
+
 .gift-card-body-item div {
 	display: flex;
 	flex-direction: row;
@@ -4469,6 +4473,10 @@ footer {
 	.gift-card-body-item {
 		row-gap: 5px;
 		margin-top: 20px;
+	}
+
+	.gift-card-body-item i {
+		font-size: 15px;
 	}
 
 	.gift-card-body-item span {
