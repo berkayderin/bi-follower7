@@ -500,6 +500,13 @@ header {
 		padding: 0 20px;
 	}
 
+	/* kaydırma menüsü */
+	.dropdown .dropdown-menu {
+		max-height: 300px;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
 	.header {
 		justify-content: center;
 	}

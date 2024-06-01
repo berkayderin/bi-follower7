@@ -343,6 +343,7 @@ header {
 	.heads {
 		display: none;
 	}
+
 	header {
 		flex-direction: row;
 		justify-content: start;
@@ -350,6 +351,13 @@ header {
 		column-gap: 10px;
 		align-items: center;
 		padding: 0 20px;
+	}
+
+	/* kaydırma menüsü */
+	.dropdown .dropdown-menu {
+		max-height: 300px;
+		overflow-y: auto;
+		overflow-x: hidden;
 	}
 
 	.header {

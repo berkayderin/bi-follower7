@@ -336,6 +336,13 @@ header {
 		right: 20px;
 	}
 
+	/* kaydırma menüsü */
+	.dropdown .dropdown-menu {
+		max-height: 300px;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+
 	.header-toggle {
 		position: absolute;
 		left: 20px;
