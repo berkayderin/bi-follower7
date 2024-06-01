@@ -4292,3 +4292,200 @@ footer {
 		flex-direction: column;
 	}
 }
+
+/* ############ free services */
+.gift-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+	background-color: #ffffff;
+	width: 1300px;
+	height: 100%;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.gift-container-content {
+	padding-bottom: 50px;
+}
+.gift-cards {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	column-gap: 30px;
+	width: 100%;
+	margin-top: 50px;
+}
+.gift-card {
+	width: 375px;
+	height: 470px;
+	border-radius: 10px;
+	background-color: #e9f3f7;
+}
+
+.gift-card-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+
+	column-gap: 10px;
+	padding: 20px;
+
+	border-bottom: 1px solid #f78129;
+}
+
+.gift-card-title-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f78129;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.gift-card-title-icon i {
+	font-size: 24px;
+	color: #fff;
+}
+.gift-card-title span {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+.gift-card-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+
+	row-gap: 70px;
+	padding: 50px 0px;
+}
+
+.gift-card-body-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+
+	row-gap: 10px;
+}
+
+.gift-card-body-item div {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+
+	column-gap: 10px;
+}
+
+.gift-card-body-item span {
+	font-size: 24px;
+	font-weight: 400;
+}
+
+.btn-green-gift {
+	width: 176px;
+	height: 42px;
+	border: none;
+	border-radius: 10px;
+	background-color: #46d3a8;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-green-gift a {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.btn-green-gift:hover {
+	background-color: #2e9e73;
+	transition: 0.3s ease-in-out all;
+}
+
+.btn-green-gift span {
+	font-size: 12px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.btn-green-gift i {
+	font-size: 1.2rem;
+	font-weight: 300;
+	color: #fff;
+	padding: 0px !important;
+}
+
+/* ############ free services mobile */
+@media (max-width: 768px) {
+	.gift-container {
+		width: 90%;
+		height: 100%;
+	}
+
+	.gift-cards {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		column-gap: 0px;
+		row-gap: 20px;
+	}
+
+	.gift-card {
+		height: 100%;
+		width: 300px;
+	}
+
+	.gift-card-title {
+		padding: 20px 10px;
+	}
+
+	.gift-card-title span {
+		font-size: 16px;
+	}
+
+	.gift-card-body {
+		padding: 20px 0px;
+	}
+
+	.gift-card-body-item {
+		row-gap: 5px;
+		margin-top: 20px;
+	}
+
+	.gift-card-body-item span {
+		font-size: 16px;
+	}
+
+	.btn-green-gift {
+		width: 150px;
+		height: 32px;
+		font-size: 14px;
+	}
+
+	.btn-green-gift span {
+		font-size: 10px;
+	}
+
+	.btn-green-gift i {
+		font-size: 1rem;
+	}
+}
